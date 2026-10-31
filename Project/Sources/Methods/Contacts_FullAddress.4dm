@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Contacts_FullAddress (with name; with country)
@@ -24,8 +24,8 @@
 // ----------------------------------------------------
 
 
-C_BOOLEAN:C305($1;$2;$withName;$withCountry)
-C_TEXT:C284($0;$fullAddress)
+C_BOOLEAN($1; $2; $withName; $withCountry)
+C_TEXT($0; $fullAddress)
 
 $withName:=$1
 $withCountry:=$2
@@ -33,11 +33,11 @@ $withCountry:=$2
 $fullAddress:=""
 
 If ($withName)
-	If ([Contacts:4]Company:4="")
-		$fullAddress:=$fullAddress+Contacts_FullName+Char:C90(Carriage return:K15:38)
+	If ([Contacts]Company="")
+		$fullAddress:=$fullAddress+Contacts_FullName+Char(Carriage return)
 	Else 
-		$fullAddress:=[Contacts:4]Company:4+Char:C90(Carriage return:K15:38)
-		$fullAddress:=$fullAddress+Fnd_Loc_GetString("Loc_Invoices";"Attn")+" "+Contacts_FullName+Char:C90(Carriage return:K15:38)
+		$fullAddress:=[Contacts]Company+Char(Carriage return)
+		$fullAddress:=$fullAddress+Fnd_Loc_GetString("Loc_Invoices"; "Attn")+" "+Contacts_FullName+Char(Carriage return)
 	End if 
 End if 
 
@@ -45,40 +45,40 @@ End if
 
 // The goal is to return a blank string if there's no address information.
 
-If ([Contacts:4]Address:5#"")
-	$fullAddress:=$fullAddress+[Contacts:4]Address:5+Char:C90(Carriage return:K15:38)
+If ([Contacts]Address#"")
+	$fullAddress:=$fullAddress+[Contacts]Address+Char(Carriage return)
 End if 
 
-If ((Contacts_IsUSA([Contacts:4]Country:9)) | ([Contacts:4]Country:9="Canada"))
-	$fullAddress:=$fullAddress+[Contacts:4]City:6
+If ((Contacts_IsUSA([Contacts]Country)) | ([Contacts]Country="Canada"))
+	$fullAddress:=$fullAddress+[Contacts]City
 End if 
 
-If ([Contacts:4]State:7#"")
-	If ([Contacts:4]City:6#"")
+If ([Contacts]State#"")
+	If ([Contacts]City#"")
 		$fullAddress:=$fullAddress+", "
 	End if 
-	$fullAddress:=$fullAddress+[Contacts:4]State:7
+	$fullAddress:=$fullAddress+[Contacts]State
 End if 
 
-If ([Contacts:4]Postal Code:8#"")
-	If ((Contacts_IsUSA([Contacts:4]Country:9)) | ([Contacts:4]Country:9="Canada"))
-		If (([Contacts:4]City:6#"") | ([Contacts:4]State:7#""))
+If ([Contacts]PostalCode#"")
+	If ((Contacts_IsUSA([Contacts]Country)) | ([Contacts]Country="Canada"))
+		If (([Contacts]City#"") | ([Contacts]State#""))
 			$fullAddress:=$fullAddress+" "
 		End if 
 	End if 
-	$fullAddress:=$fullAddress+[Contacts:4]Postal Code:8
+	$fullAddress:=$fullAddress+[Contacts]PostalCode
 End if 
 
-If (Not:C34((Contacts_IsUSA([Contacts:4]Country:9)) | ([Contacts:4]Country:9="Canada")))
-	$fullAddress:=$fullAddress+" "+[Contacts:4]City:6
+If (Not((Contacts_IsUSA([Contacts]Country)) | ([Contacts]Country="Canada")))
+	$fullAddress:=$fullAddress+" "+[Contacts]City
 End if 
 
-If (([Contacts:4]City:6#"") | ([Contacts:4]State:7#"") | ([Contacts:4]Postal Code:8#""))
-	$fullAddress:=$fullAddress+Char:C90(Carriage return:K15:38)
+If (([Contacts]City#"") | ([Contacts]State#"") | ([Contacts]PostalCode#""))
+	$fullAddress:=$fullAddress+Char(Carriage return)
 End if 
 
 If ($withCountry)
-	$fullAddress:=$fullAddress+[Contacts:4]Country:9+Char:C90(Carriage return:K15:38)
+	$fullAddress:=$fullAddress+[Contacts]Country+Char(Carriage return)
 End if 
 
 $0:=$fullAddress

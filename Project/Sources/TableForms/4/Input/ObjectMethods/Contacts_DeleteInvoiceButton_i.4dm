@@ -9,19 +9,19 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		CONFIRM:C162("Are you sure you want to delete this invoice?";"Delete";"Cancel")
+	: (Form event code=On Clicked)
+		CONFIRM("Are you sure you want to delete this invoice?"; "Delete"; "Cancel")
 		If (OK=1)
-			READ WRITE:C146([Invoices:6])
-			LOAD RECORD:C52([Invoices:6])
+			READ WRITE([Invoices])
+			LOAD RECORD([Invoices])
 			
-			If (Locked:C147([Invoices:6]))
-				ALERT:C41("The record is locked and can't be deleted now.")
+			If (Locked([Invoices]))
+				ALERT("The record is locked and can't be deleted now.")
 			Else 
-				DELETE RECORD:C58([Invoices:6])
+				DELETE RECORD([Invoices])
 			End if 
 			
-			READ ONLY:C145([Invoices:6])
+			READ ONLY([Invoices])
 			Contacts_LoadRelatedInvoices
 		End if 
 End case 

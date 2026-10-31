@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {"invisible":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Test_Assert ($ok_b : Boolean; $message_t : Text)
 
@@ -12,6 +12,10 @@
 // Never alerts. A modal dialog in a test blocks the process it runs in, and in a
 //   compiled host there is no debugger to interrupt it.
 
+// Every assertion, pass and fail alike, is also written to the "FPS_Test" log
+//   through Fnd_Log — see Fnd_Test_Begin — matching
+//   Foundation's own Fnd_Test_Assert, which logs every assertion the same way.
+
 // Access: Private
 
 // Parameters:
@@ -20,7 +24,7 @@
 
 // Returns: Nothing
 
-// Created by Wayne Stewart (Claude Opus 5) (2026-08-11)
+// Created by Wayne Stewart (Claude) on 2026-08-11
 // ----------------------------------------------------
 
 #DECLARE($ok_b : Boolean; $message_t : Text)
@@ -38,28 +42,35 @@ $callChain_c:=Fnd_Shell_CommandWrapper("Get call chain")
 $caller_t:=""
 
 For each ($frame_o; $callChain_c) Until ($caller_t#"")
-
+	
 	If (($frame_o.name#"Fnd_Test_Assert") && ($frame_o.name#"Fnd_Shell_CommandWrapper"))
 		$caller_t:=$frame_o.name
-	End if
+	End if 
+	
+End for each 
 
-End for each
-
-If (Storage:C1525.fpsTest=Null:C1517)
+If (Storage.fpsTest=Null)
 	// A test that forgot to open a run still has somewhere to be recorded.
 	Fnd_Test_Begin("unnamed")
-End if
+End if 
 
-Use (Storage:C1525.fpsTest)
-
+Use (Storage.fpsTest)
+	
 	If ($ok_b)
-		Storage:C1525.fpsTest.passed:=Storage:C1525.fpsTest.passed+1
+		Storage.fpsTest.passed:=Storage.fpsTest.passed+1
+		
+	Else 
+		Storage.fpsTest.failed:=Storage.fpsTest.failed+1
+		Storage.fpsTest.assertions.push(New shared object(\
+			"ok"; False; "test"; $caller_t; "message"; $message_t))
+		
+	End if 
+	
+End use 
 
-	Else
-		Storage:C1525.fpsTest.failed:=Storage:C1525.fpsTest.failed+1
-		Storage:C1525.fpsTest.assertions.push(New shared object:C1526(\
-		"ok"; False:C215; "test"; $caller_t; "message"; $message_t))
-
-	End if
-
-End use
+// Info is level 1 and error is level 4. The log is selected per process, so it
+//   is chosen here rather than assumed from Fnd_Test_Begin.
+Fnd_Log_UseLog("FPS_Test")
+Fnd_Log_Enable(True)
+Fnd_Log_AddEntry(New object("logLevel"; ($ok_b ? 1 : 4)); \
+	($ok_b ? "pass" : "FAIL"); $caller_t; $message_t)

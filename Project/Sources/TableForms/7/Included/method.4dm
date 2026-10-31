@@ -13,12 +13,12 @@
 
 
 Case of 
-	: (Form event code:C388=On Display Detail:K2:22)
-		LineItems_ProductNumber_t:=[Products:5]Product Number:2
-		LineItems_Extended_r:=[Line Items:7]Quantity:4*[Line Items:7]Sell Price:6
+	: (Form event code=On Display Detail)
+		LineItems_ProductNumber_t:=[Products]ProductNumber
+		LineItems_Extended_r:=[LineItems]Quantity*[LineItems]SellPrice
 		
-		OBJECT SET FORMAT:C236([Line Items:7]List Price:5;<>Gen_MoneyFormat_t)  // DB040829 - Added
-			
-		OBJECT SET FORMAT:C236([Line Items:7]Sell Price:6;<>Gen_MoneyFormat_t)
-		OBJECT SET FORMAT:C236([Line Items:7]Extended:7;<>Gen_MoneyFormat_t)
+		OBJECT SET FORMAT([LineItems]ListPrice; <>Gen_MoneyFormat_t)  // DB040829 - Added
+		
+		OBJECT SET FORMAT([LineItems]SellPrice; <>Gen_MoneyFormat_t)
+		OBJECT SET FORMAT([LineItems]Extended; <>Gen_MoneyFormat_t)
 End case 

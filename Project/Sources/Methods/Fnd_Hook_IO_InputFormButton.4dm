@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_IO_InputFormButton (button) --> Boolean
 
@@ -23,12 +23,12 @@
 // Call Fnd_Gen_CurrentTable to determine the current table.
 // Return False to prevent the default action.
 
-C_BOOLEAN:C305($0)
-C_TEXT:C284($1;$Button_t)
+C_BOOLEAN($0)
+C_TEXT($1; $Button_t)
 
 $Button_t:=$1
 
-$0:=True:C214
+$0:=True
 
 //  // EXAMPLE CODE:
 //If ($Button_t="cancel") & (Fnd_Gen_CurrentTable =(->[Contacts]))

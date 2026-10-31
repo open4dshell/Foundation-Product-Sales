@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Contacts_IsUSA (country) --> Boolean
@@ -25,26 +25,26 @@
 // ----------------------------------------------------
 
 
-C_BOOLEAN:C305($0;$isUS_b)
-C_TEXT:C284($1;$country_t)
+C_BOOLEAN($0; $isUS_b)
+C_TEXT($1; $country_t)
 
 $country_t:=$1
 
-$country_t:=Replace string:C233($country_t;" ";"")
-$country_t:=Replace string:C233($country_t;".";"")
+$country_t:=Replace string($country_t; " "; "")
+$country_t:=Replace string($country_t; "."; "")
 
 Case of 
 	: (($country_t="US") | ($country_t="USA"))
-		$isUS_b:=True:C214
+		$isUS_b:=True
 		
 	: (($country_t="UnitedStates") | ($country_t="UnitedStatesOfAmerica"))
-		$isUS_b:=True:C214
+		$isUS_b:=True
 		
 	: ($country_t="America")
-		$isUS_b:=True:C214
+		$isUS_b:=True
 		
 	Else 
-		$isUS_b:=False:C215
+		$isUS_b:=False
 End case 
 
 $0:=$isUS_b

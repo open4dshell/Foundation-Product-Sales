@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Shell_VirtualStructure
 

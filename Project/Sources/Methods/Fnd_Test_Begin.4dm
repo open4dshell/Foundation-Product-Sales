@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {"invisible":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Test_Begin ($configuration_t : Text)
 
@@ -11,11 +11,11 @@
 //   Fnd_Test_ methods are Private, so they are not published to a host and there
 //   is nothing to collide with — a call from FPS can only reach this one.
 
-// The body is not a copy. Foundation's version records through Fnd_Log_UseLog,
-//   which is Private and unreachable from here, and its Storage is a different
-//   object from ours. More to the point, Fnd_Log_AddEntry is one of the seven
-//   variadic methods under test, so recording through it would take the
-//   instrument down with the subject.
+// FPS selects its own log, "FPS_Test", through Foundation's Fnd_Log_DeclareLog,
+//   Fnd_Log_UseLog and Fnd_Log_Enable, all Shared. The label and file differ
+//   from Foundation's "Fnd_Test" log, because the two projects cannot write to
+//   the same one. Fnd_Log_AddEntry is one of the variadic methods under test, so
+//   the instrument shares a failure with its subject; that risk is accepted.
 
 // Access: Private
 
@@ -24,30 +24,54 @@
 
 // Returns: Nothing
 
-// Created by Wayne Stewart (Claude Opus 5) (2026-08-11)
+// Created by Wayne Stewart (Claude) on 2026-08-11
 // ----------------------------------------------------
 
 #DECLARE($configuration_t : Text)
 
 var $stamp_o : Object
-var $foundationCompiled_b : Boolean
+var $foundationCompiled_t : Text
 
-// Foundation reports its own compiled state; ours comes from Is compiled mode.
-//   Fnd_Gen_ComponentInfo is Shared, so it answers across the boundary.
-$foundationCompiled_b:=False:C215
+// Foundation reports its own compiled state through Fnd_Gen_Info's "compiled"
+//   label, reached across the component boundary via the Shared
+//   Fnd_Gen_ComponentInfo — ours comes straight from Is compiled mode, since the
+//   host is not itself a component and has no such label to ask. On success
+//   Fnd_Gen_ComponentInfo answers with the text "True" or "False"; any of its
+//   three documented failure replies ("Component Not Available", "Component Did
+//   Not Respond", "Component Did Not Recognize Request") means the state
+//   genuinely could not be determined, so that is stamped "Unknown" rather than
+//   guessed as False — a guess would silently collide two different matrix cells
+//   under the one result filename, which is the defect this replaces.
+$foundationCompiled_t:=Fnd_Gen_ComponentInfo("Fnd_Gen"; "compiled")
 
-$stamp_o:=New object:C1471(\
+If (($foundationCompiled_t="True") || ($foundationCompiled_t="False"))
+	// Fnd_Gen_ComponentInfo answered cleanly — keep its reply as the stamp
+	
+Else 
+	$foundationCompiled_t:="Unknown"
+End if 
+
+$stamp_o:=New object(\
 "configuration"; $configuration_t; \
-"v4D"; Application version:C493; \
-"hostCompiled"; Is compiled mode:C492; \
-"componentCompiled"; $foundationCompiled_b; \
+"v4D"; Application version; \
+"hostCompiled"; Is compiled mode; \
+"componentCompiled"; $foundationCompiled_t; \
 "startedAt"; Fnd_Test_Stamp)
 
-Use (Storage:C1525)
-	Storage:C1525.fpsTest:=New shared object:C1526(\
-	"passed"; 0; \
-	"failed"; 0; \
-	"closed"; False:C215; \
-	"stamp"; OB Copy:C1225($stamp_o; ck shared:K85:29); \
-	"assertions"; New shared collection:C1527)
-End use
+// The durable record. Declaring is idempotent — safe to repeat on every run —
+//   and selecting the log is per process, so it must happen wherever the run
+//   actually executes rather than being assumed from an earlier call.
+Fnd_Log_DeclareLog("FPS_Test"; "FPS_Test.txt")
+Fnd_Log_UseLog("FPS_Test")
+Fnd_Log_Enable(True)
+// Level 1 is info and 4 is error: the values Fnd_Log_AddEntry accepts.
+Fnd_Log_AddEntry(New object("logLevel"; 1); "BEGIN"; JSON Stringify($stamp_o))
+
+Use (Storage)
+	Storage.fpsTest:=New shared object(\
+		"passed"; 0; \
+		"failed"; 0; \
+		"closed"; False; \
+		"stamp"; OB Copy($stamp_o; ck shared); \
+		"assertions"; New shared collection)
+End use 

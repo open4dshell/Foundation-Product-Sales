@@ -8,14 +8,14 @@
 // ----------------------------------------------------
 
 
-If (Form event code:C388=On Data Change:K2:15)
-	Self:C308->{0}:=Fnd_Data_FormatText(Self:C308->{0})
-	If (Contacts_IsUSA(Self:C308->{0}))
-		Self:C308->{0}:="United States"
+If (Form event code=On Data Change)
+	Self->{0}:=Fnd_Data_FormatText(Self->{0})
+	If (Contacts_IsUSA(Self->{0}))
+		Self->{0}:="United States"
 	End if 
 End if 
 
-If ((Form event code:C388=On Data Change:K2:15) | (Form event code:C388=On Clicked:K2:4))
-	[Contacts:4]Country:9:=Self:C308->{0}
+If ((Form event code=On Data Change) | (Form event code=On Clicked))
+	[Contacts]Country:=Self->{0}
 	Contacts_UpdateAddressFields
 End if 

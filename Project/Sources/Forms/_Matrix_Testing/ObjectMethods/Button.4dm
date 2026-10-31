@@ -1,8 +1,12 @@
-Fnd_Wnd_Init
+// _Matrix_Testing window-dimensions diagnostic.
+// Created by Wayne Stewart
+// Wayne Stewart (Claude) 2026-08-01 -> 2026-11-01 - Prepare Foundation 6 release
+var $o : Object
+var $left; $top; $right; $bottom; $width; $height : Integer
 
-$o:=New object:C1471
-GET WINDOW RECT:C443($left;$top;$right;$bottom)
-FORM GET PROPERTIES:C674("_Matrix_Testing";$width;$height)
+$o:=New object
+GET WINDOW RECT($left; $top; $right; $bottom)
+FORM GET PROPERTIES("_Matrix_Testing"; $width; $height)
 
 $o.Left:=$left
 $o.Top:=$top
@@ -12,10 +16,10 @@ $o.windowWidth:=$right-$left
 $o.windowHeight:=$bottom-$top
 $o.formWidth:=$width
 $o.formHeight:=$height
-$o.screenWidth:=Screen width:C187
-$o.screenHeight:=Screen height:C188
-$o.menuBar:=Menu bar height:C440
+$o.screenWidth:=Screen width
+$o.screenHeight:=Screen height
+$o.menuBar:=Menu bar height
 $o.toolbarHeight:=Fnd_Wnd_ToolbarHeight
 //$o.titleBarHeight:=$o.formHeight-($top-$bottom)
 
-SET TEXT TO PASTEBOARD:C523(JSON Stringify:C1217($o;*))
+SET TEXT TO PASTEBOARD(JSON Stringify($o; *))

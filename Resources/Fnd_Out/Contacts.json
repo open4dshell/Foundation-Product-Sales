@@ -1,0 +1,26 @@
+﻿{
+	"offer": {
+		"hide": [
+			"LastName",
+			"FirstName",
+			"Formula: this.fullName()",
+			"PostalCode"
+		],
+		"only": []
+	},
+	"formulas": [
+		{
+			"formula": "this.fullName()",
+			"title": "Contact",
+			"type": 2
+		},
+		{
+			"formula": "this.reversedFullName()",
+			"title": "Contact Reversed",
+			"type": 2
+		}
+	],
+	"builtInLayouts": [],
+	"appearance": {},
+	"allowCustomColumns": true
+}

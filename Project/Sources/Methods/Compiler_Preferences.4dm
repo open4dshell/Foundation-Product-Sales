@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Compiler_Preferences
 
@@ -10,4 +10,4 @@
 // Returns: Nothing
 // ----------------------------------------------------
 
-C_LONGINT:C283(<>Pref_OffscreenButton_i;<>Pref_NavPaletteCheckbox_i)
+C_LONGINT(<>Pref_OffscreenButton_i; <>Pref_NavPaletteCheckbox_i)

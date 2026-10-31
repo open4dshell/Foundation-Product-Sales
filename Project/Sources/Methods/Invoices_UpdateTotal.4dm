@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Invoices_UpdateTotal
@@ -22,8 +22,8 @@
 
 Invoices_LoadRelatedLineItems
 
-[Invoices:6]Subtotal:5:=Sum:C1([Line Items:7]Extended:7)
+[Invoices]Subtotal:=Sum([LineItems]Extended)
 
-UNLOAD RECORD:C212([Line Items:7])
+UNLOAD RECORD([LineItems])
 
-[Invoices:6]Total:8:=[Invoices:6]Subtotal:5+[Invoices:6]Tax:6+[Invoices:6]Shipping:7
+[Invoices]Total:=[Invoices]Subtotal+[Invoices]Tax+[Invoices]Shipping

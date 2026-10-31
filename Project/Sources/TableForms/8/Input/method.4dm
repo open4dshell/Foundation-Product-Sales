@@ -13,34 +13,34 @@
 
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
+	: (Form event code=On Load)
 		Case of 
 			: (Fnd_Loc_LanguageCode="FR")
-				LIST TO ARRAY:C288("Invoice Terms (FR)";Company_TermsPopup_at)
+				LIST TO ARRAY("Invoice Terms (FR)"; Company_TermsPopup_at)
 			Else 
-				LIST TO ARRAY:C288("Invoice Terms (EN)";Company_TermsPopup_at)
+				LIST TO ARRAY("Invoice Terms (EN)"; Company_TermsPopup_at)
 		End case 
 		
 		
-		Fnd_Loc_FixLabelWidths(-><>Company_NameLabel_t;->[Company Info:8]Company Name:2;-><>Company_AddressLabel_t;->[Company Info:8]Address:3;-><>Company_PhoneLabel_t;->[Company Info:8]Phone:4;-><>Company_EmailLabel_t;->[Company Info:8]Email Address:6;-><>Company_WebSiteLabel_t;->[Company Info:8]Web Site:7)
+		Fnd_Loc_FixLabelWidths(-><>Company_NameLabel_t; ->[CompanyInfo]CompanyName; -><>Company_AddressLabel_t; ->[CompanyInfo]Address; -><>Company_PhoneLabel_t; ->[CompanyInfo]Phone; -><>Company_EmailLabel_t; ->[CompanyInfo]EmailAddress; -><>Company_WebSiteLabel_t; ->[CompanyInfo]WebSite)
 		
 		// Move the "Voice" label back under the Phone field.
-			
-		OBJECT GET COORDINATES:C663([Company Info:8]Phone:4;$fieldLeft_i;$top_i;$right_i;$bottom_i)
-		OBJECT GET COORDINATES:C663(*;"Company_VoiceLabel";$left_i;$top_i;$right_i;$bottom_i)
-		OBJECT MOVE:C664(*;"Company_VoiceLabel";$fieldLeft_i;$top_i;$right_i;$bottom_i;*)
 		
-		Fnd_Loc_FixLabelWidths(-><>Company_TermsLabel_t;->Company_TermsPopup_at)
+		OBJECT GET COORDINATES([CompanyInfo]Phone; $fieldLeft_i; $top_i; $right_i; $bottom_i)
+		OBJECT GET COORDINATES(*; "Company_VoiceLabel"; $left_i; $top_i; $right_i; $bottom_i)
+		OBJECT MOVE(*; "Company_VoiceLabel"; $fieldLeft_i; $top_i; $right_i; $bottom_i; *)
 		
-		If (Is new record:C668(Current form table:C627->))
+		Fnd_Loc_FixLabelWidths(-><>Company_TermsLabel_t; ->Company_TermsPopup_at)
+		
+		If (Is new record(Current form table->))
 			Fnd_SqNo_SetRecordID
-			[Company Info:8]Company Name:2:=Fnd_Loc_GetString("Loc_Company";"YourCompanyNameHere")
-			If (Size of array:C274(Company_TermsPopup_at)>=1)
-				[Company Info:8]Default Terms:8:=Company_TermsPopup_at{1}
+			[CompanyInfo]CompanyName:=Fnd_Loc_GetString("Loc_Company"; "YourCompanyNameHere")
+			If (Size of array(Company_TermsPopup_at)>=1)
+				[CompanyInfo]DefaultTerms:=Company_TermsPopup_at{1}
 			End if 
 		End if 
 		
-		Company_TermsPopup_at{0}:=[Company Info:8]Default Terms:8
+		Company_TermsPopup_at{0}:=[CompanyInfo]DefaultTerms
 End case 
 
 Fnd_IO_InputFormMethod

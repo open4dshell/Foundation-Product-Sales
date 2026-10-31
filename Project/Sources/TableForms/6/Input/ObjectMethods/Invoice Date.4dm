@@ -8,4 +8,4 @@
 // ----------------------------------------------------
 
 
-Fnd_Date_EntryFilter(Self:C308)
+Fnd_Date_EntryFilter(Self)

@@ -9,8 +9,8 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
+	: (Form event code=On Clicked)
 		Invoices_UpdateContactInfo  // This will make sure the [Contacts] record is loaded.
-			
-		Fnd_IO_DisplayRecord(->[Contacts:4];Record number:C243([Contacts:4]))
+		
+		Fnd_IO_DisplayRecord(->[Contacts]; Record number([Contacts]))
 End case 

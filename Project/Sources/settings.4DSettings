@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="11">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="13">
 	<com.4d>
 		<database>
 			<cache flush_buffer_delay="15" size_fixed="32" size_maximum="100" size_reserved="128"/>
-			<misc standard_xpath="false"/>
+			<misc mac_use_lf="true" no_bom="true" non_blocking_printing="true" prefer_null_than_blank_values="true" split_catalog="true" standard_xpath="true" win_form_text_directwrite="true"/>
 		</database>
-		<general startup_environnement="0">
+		<general execute_host_database_event="true" startup_environnement="0">
 			<mover always_display_dialog="2"/>
 		</general>
 		<interface>
@@ -20,12 +20,12 @@
 		<server>
 			<misc/>
 			<network>
-				<options publication_name="Product Sales.4DB" use_legacy_network_layer="true"/>
-				<client_server use_encryption="false"/>
+				<options use_legacy_network_layer="false" use_quic_network_layer="true"/>
+				<client_server/>
 			</network>
 		</server>
 		<compiler>
-			<options compilation_path="3"/>
+			<options compilation_path="1"/>
 			<typage default_for_button="2" default_for_numeric="1"/>
 		</compiler>
 		<sql>

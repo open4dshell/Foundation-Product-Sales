@@ -1,2 +1,2 @@
-//%attributes = {"invisible":true,"shared":true}
-$0:=This:C1470.FirstName+" "+This:C1470.LastName
+//%attributes = {"invisible":true,"shared":true,"lang":"en"}
+$0:=This.FirstName+" "+This.LastName

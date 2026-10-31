@@ -17,11 +17,11 @@
 
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
-		OBJECT SET FORMAT:C236([Products:5]List Price:5;<>Gen_MoneyFormat_t)  // DB040829 - Added
-			
-		ORDER BY:C49([Products:5];[Products:5]Product Number:2;>)  // 4D030627 - Added
-			
+	: (Form event code=On Load)
+		OBJECT SET FORMAT([Products]ListPrice; <>Gen_MoneyFormat_t)  // DB040829 - Added
+		
+		ORDER BY([Products]; [Products]ProductNumber; >)  // 4D030627 - Added
+		
 End case 
 
 Fnd_IO_OutputFormMethod

@@ -1,0 +1,24 @@
+﻿{
+	"offer": {
+		"hide": [
+			"InvoiceDate",
+			"InvoiceNumber",
+			"Shipping",
+			"Tax",
+			"contact.Address",
+			"contact.Fax",
+			"contact.EmailAddress"
+		],
+		"only": [
+			"Shipping",
+			"Subtotal",
+			"Tax",
+			"contact.Address",
+			"contact.Fax",
+			"contact.EmailAddress",
+			"contact.FirstName"
+		]
+	},
+	"formulas": [],
+	"builtInLayouts": []
+}

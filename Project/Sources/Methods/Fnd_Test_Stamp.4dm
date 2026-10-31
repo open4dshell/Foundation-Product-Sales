@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {"invisible":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Test_Stamp --> Text
 
@@ -15,12 +15,12 @@
 // Returns:
 //   $stamp_t : Text : Local date and time, YYYY-MM-DDThh:mm:ss
 
-// Created by Wayne Stewart (Claude Opus 5) (2026-08-11)
+// Created by Wayne Stewart (Claude) on 2026-08-11
 // ----------------------------------------------------
 
 #DECLARE->$stamp_t : Text
 
-$stamp_t:=String:C10(Year of:C25(Current date:C33); "0000")\
-+"-"+String:C10(Month of:C24(Current date:C33); "00")\
-+"-"+String:C10(Day of:C23(Current date:C33); "00")\
-+"T"+String:C10(Current time:C178; HH MM SS:K7:1)
+$stamp_t:=String(Year of(Current date); "0000")\
++"-"+String(Month of(Current date); "00")\
++"-"+String(Day of(Current date); "00")\
++"T"+String(Current time; HH MM SS)

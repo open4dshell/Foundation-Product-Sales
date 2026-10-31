@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Invoices_LoadRelatedLineItems
@@ -18,8 +18,8 @@
 // ----------------------------------------------------
 
 
-QUERY:C277([Line Items:7];[Line Items:7]Invoice_ID:2=[Invoices:6]Invoice_ID:1)
-ORDER BY:C49([Line Items:7];[Line Items:7]LineItem_ID:1;>)
+QUERY([LineItems]; [LineItems]Invoice_ID=[Invoices]Invoice_ID)
+ORDER BY([LineItems]; [LineItems]LineItem_ID; >)
 
 // Move the current record pointer to none of the current records.
 
@@ -29,5 +29,5 @@ ORDER BY:C49([Line Items:7];[Line Items:7]LineItem_ID:1;>)
 
 //   disabled or enabled.  This fixes this interface problem.
 
-FIRST RECORD:C50([Line Items:7])
-PREVIOUS RECORD:C110([Line Items:7])
+FIRST RECORD([LineItems])
+PREVIOUS RECORD([LineItems])

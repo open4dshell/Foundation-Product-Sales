@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Contacts_UpdateAddressFields
@@ -19,29 +19,29 @@
 
 
 Case of 
-	: ((Contacts_IsUSA([Contacts:4]Country:9)) | ([Contacts:4]Country:9=""))
-		OBJECT SET VISIBLE:C603(*;"Contacts_USCity@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USState@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USZip@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherCity@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherPostal@";False:C215)
-		Contacts_StateLabel_t:=Fnd_Loc_GetString("Loc_Contacts";"StateLabel")
-		Contacts_PostalCodeLabel_t:=Fnd_Loc_GetString("Loc_Contacts";"ZipCodeLabel")
+	: ((Contacts_IsUSA([Contacts]Country)) | ([Contacts]Country=""))
+		OBJECT SET VISIBLE(*; "Contacts_USCity@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_USState@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_USZip@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_OtherCity@"; False)
+		OBJECT SET VISIBLE(*; "Contacts_OtherPostal@"; False)
+		Contacts_StateLabel_t:=Fnd_Loc_GetString("Loc_Contacts"; "StateLabel")
+		Contacts_PostalCodeLabel_t:=Fnd_Loc_GetString("Loc_Contacts"; "ZipCodeLabel")
 		
-	: ([Contacts:4]Country:9="Canada")
-		OBJECT SET VISIBLE:C603(*;"Contacts_USCity@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USState@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USZip@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherCity@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherPostal@";False:C215)
-		Contacts_StateLabel_t:=Fnd_Loc_GetString("Loc_Contacts";"ProvinceLabel")
-		Contacts_PostalCodeLabel_t:=Fnd_VS_FieldName(->[Contacts:4]Postal Code:8)
+	: ([Contacts]Country="Canada")
+		OBJECT SET VISIBLE(*; "Contacts_USCity@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_USState@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_USZip@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_OtherCity@"; False)
+		OBJECT SET VISIBLE(*; "Contacts_OtherPostal@"; False)
+		Contacts_StateLabel_t:=Fnd_Loc_GetString("Loc_Contacts"; "ProvinceLabel")
+		Contacts_PostalCodeLabel_t:=Fnd_VS_FieldName(->[Contacts]PostalCode)
 		
 	Else 
-		[Contacts:4]State:7:=""
-		OBJECT SET VISIBLE:C603(*;"Contacts_USCity@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USState@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"Contacts_USZip@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherCity@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"Contacts_OtherPostal@";True:C214)
+		[Contacts]State:=""
+		OBJECT SET VISIBLE(*; "Contacts_USCity@"; False)
+		OBJECT SET VISIBLE(*; "Contacts_USState@"; False)
+		OBJECT SET VISIBLE(*; "Contacts_USZip@"; False)
+		OBJECT SET VISIBLE(*; "Contacts_OtherCity@"; True)
+		OBJECT SET VISIBLE(*; "Contacts_OtherPostal@"; True)
 End case 

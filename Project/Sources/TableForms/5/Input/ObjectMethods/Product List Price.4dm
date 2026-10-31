@@ -9,6 +9,6 @@
 
 
 Case of 
-	: (Form event code:C388=On Data Change:K2:15)
-		Self:C308->:=Round:C94(Self:C308->;2)
+	: (Form event code=On Data Change)
+		Self->:=Round(Self->; 2)
 End case 

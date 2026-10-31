@@ -3,6 +3,7 @@
 		{
 			"id": 1,
 			"name": "Fnd_Shell",
+			"picture": "/RESOURCES/Images/koala.png",
 			"items": [
 				{
 					"link": 1102
@@ -131,15 +132,6 @@
 			"title": "Tools",
 			"items": [
 				{
-					"title": "Component Report",
-					"method": "Fnd_Gen_ComponentReport"
-				},
-				{
-					"title": "(-",
-					"isSeparator": true,
-					"enabled": false
-				},
-				{
 					"title": "Localization Editor",
 					"method": "Fnd_Loc_Editor"
 				},
@@ -150,15 +142,6 @@
 				{
 					"title": "Duplicate a 4D List...",
 					"method": "Fnd_Loc_DuplicateList"
-				},
-				{
-					"title": "(-",
-					"isSeparator": true,
-					"enabled": false
-				},
-				{
-					"title": "Remove Activation Code",
-					"method": "Fnd_Gen_RemoveActivationCode"
 				}
 			]
 		}

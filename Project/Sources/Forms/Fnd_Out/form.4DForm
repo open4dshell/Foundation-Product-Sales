@@ -40,7 +40,8 @@
 						"onDoubleClick",
 						"onDataChange",
 						"onSelectionChange",
-						"onHeaderClick"
+						"onHeaderClick",
+						"onColumnResize"
 					],
 					"listboxType": "collection",
 					"right": 469,
@@ -59,12 +60,50 @@
 					"rowStrokeSource": "",
 					"metaSource": "",
 					"columns": []
+				},
+				"cmd-w": {
+					"type": "button",
+					"text": "cmd-w",
+					"top": 475,
+					"left": 17,
+					"width": 65,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"sizingY": "move",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w",
+					"focusable": false,
+					"method": "ObjectMethods/cmd-w.4dm"
+				},
+				"cmd-opt-w": {
+					"type": "button",
+					"text": "cmd-opt-w",
+					"top": 521,
+					"left": 17,
+					"width": 105,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"sizingY": "move",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": true,
+					"shortcutKey": "w",
+					"focusable": false,
+					"method": "ObjectMethods/cmd-opt-w.4dm"
 				}
 			}
 		}
 	],
 	"inheritedForm": "Fnd_Tlbr_Toolbar",
-	"geometryStamp": 16,
+	"geometryStamp": 25,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

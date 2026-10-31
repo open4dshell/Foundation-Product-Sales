@@ -5,8 +5,8 @@
 // ----------------------------------------------------
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		FORM SET OUTPUT:C54([Invoices:6];"Invoice")
-		PRINT RECORD:C71([Invoices:6])
-		FORM SET OUTPUT:C54([Invoices:6];"Output")
+	: (Form event code=On Clicked)
+		FORM SET OUTPUT([Invoices]; "Invoice")
+		PRINT RECORD([Invoices])
+		FORM SET OUTPUT([Invoices]; "Output")
 End case 

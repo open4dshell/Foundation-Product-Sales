@@ -9,8 +9,8 @@
 
 
 Case of 
-	: (Form event code:C388=On Data Change:K2:15)
-		Self:C308->:=Round:C94(Self:C308->;2)  // In case a fraction of a cent gets entered by mistake.
-			
+	: (Form event code=On Data Change)
+		Self->:=Round(Self->; 2)  // In case a fraction of a cent gets entered by mistake.
+		
 		Invoices_UpdateTotal
 End case 

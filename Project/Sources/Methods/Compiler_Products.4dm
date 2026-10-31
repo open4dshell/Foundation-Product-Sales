@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Compiler_Products
@@ -18,9 +18,9 @@
 // ----------------------------------------------------
 
 
-C_TEXT:C284(<>Products_NumberColumnLabel_t)
-C_TEXT:C284(<>Products_NumberLabel_t)
-C_TEXT:C284(<>Products_NameLabel_t)
-C_TEXT:C284(<>Products_SelectNumberLabel_t)
-C_TEXT:C284(<>Products_DescriptionLabel_t)
-C_TEXT:C284(<>Products_PriceLabel_t)
+C_TEXT(<>Products_NumberColumnLabel_t)
+C_TEXT(<>Products_NumberLabel_t)
+C_TEXT(<>Products_NameLabel_t)
+C_TEXT(<>Products_SelectNumberLabel_t)
+C_TEXT(<>Products_DescriptionLabel_t)
+C_TEXT(<>Products_PriceLabel_t)

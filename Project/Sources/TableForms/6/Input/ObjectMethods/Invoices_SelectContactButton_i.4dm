@@ -8,13 +8,13 @@
 // ----------------------------------------------------
 
 
-C_LONGINT:C283($contactID)
+C_LONGINT($contactID)
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
+	: (Form event code=On Clicked)
 		$contactID:=Invoices_SelectContact
 		If (OK=1)
-			[Invoices:6]Contact_ID:2:=$contactID
+			[Invoices]Contact_ID:=$contactID
 			Invoices_UpdateContactInfo
 		End if 
 End case 

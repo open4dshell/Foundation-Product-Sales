@@ -21,16 +21,16 @@
 
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
-		ORDER BY:C49([Contacts:4];[Contacts:4]Last Name:3;>;[Contacts:4]First Name:2;>)  // 4D030627 - Added
-			
+	: (Form event code=On Load)
+		ORDER BY([Contacts]; [Contacts]LastName; >; [Contacts]FirstName; >)  // 4D030627 - Added
 		
-	: (Form event code:C388=On Display Detail:K2:22)
-		If (([Contacts:4]First Name:2="") & ([Contacts:4]Last Name:3="") & ([Contacts:4]Company:4=""))
-			[Contacts:4]Last Name:3:=Fnd_Loc_GetString("Loc_Contacts";"NoNameOrCompany")  // DB040920 - Fixed.
-				
+		
+	: (Form event code=On Display Detail)
+		If (([Contacts]FirstName="") & ([Contacts]LastName="") & ([Contacts]Company=""))
+			[Contacts]LastName:=Fnd_Loc_GetString("Loc_Contacts"; "NoNameOrCompany")  // DB040920 - Fixed.
+			
 		Else 
-			[Contacts:4]Last Name:3:=Contacts_FullName
+			[Contacts]LastName:=Contacts_FullName
 		End if 
 End case 
 

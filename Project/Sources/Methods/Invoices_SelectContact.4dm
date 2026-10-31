@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Invoices_SelectContact --> Longint
 
@@ -16,23 +16,23 @@
 //   Now the records are sorted before creating the arrays.
 // ----------------------------------------------------
 
-C_LONGINT:C283($0;$i)
+C_LONGINT($0; $i)
 
-READ ONLY:C145([Contacts:4])
-ALL RECORDS:C47([Contacts:4])
-ORDER BY:C49([Contacts:4];[Contacts:4]Last Name:3;>;[Contacts:4]First Name:2;>)  // 4D030627 - Added
-SELECTION TO ARRAY:C260([Contacts:4]Contact_ID:1;$aContactIDs;[Contacts:4]First Name:2;$FirstNames_at;[Contacts:4]Last Name:3;Invoices_ContactNames_at;[Contacts:4]Company:4;Invoices_ContactCompanies_at)
+READ ONLY([Contacts])
+ALL RECORDS([Contacts])
+ORDER BY([Contacts]; [Contacts]LastName; >; [Contacts]FirstName; >)  // 4D030627 - Added
+SELECTION TO ARRAY([Contacts]Contact_ID; $aContactIDs; [Contacts]FirstName; $FirstNames_at; [Contacts]LastName; Invoices_ContactNames_at; [Contacts]Company; Invoices_ContactCompanies_at)
 
-For ($i;1;Size of array:C274($FirstNames_at))
+For ($i; 1; Size of array($FirstNames_at))
 	Invoices_ContactNames_at{$i}:=$FirstNames_at{$i}+" "+Invoices_ContactNames_at{$i}
 End for 
 
-Fnd_Wnd_Type(Movable form dialog box:K39:8)
+Fnd_Wnd_Type(Movable form dialog box)
 Fnd_Wnd_Position(Fnd_Wnd_CenterOnWindow)
 Fnd_Wnd_Title("Select a Contact")
-Fnd_Wnd_OpenFormWindow(->[Invoices:6];"SelectContact")
-DIALOG:C40([Invoices:6];"SelectContact")
-CLOSE WINDOW:C154
+Fnd_Wnd_OpenFormWindow(->[Invoices]; "SelectContact")
+DIALOG([Invoices]; "SelectContact")
+CLOSE WINDOW
 
 If (OK=1)
 	$0:=$aContactIDs{Invoices_ContactNames_at}
@@ -41,5 +41,5 @@ Else
 End if 
 
 // Clear the process arrays to release the RAM they're using.
-ARRAY TEXT:C222(Invoices_ContactNames_at;0)
-ARRAY TEXT:C222(Invoices_ContactCompanies_at;0)
+ARRAY TEXT(Invoices_ContactNames_at; 0)
+ARRAY TEXT(Invoices_ContactCompanies_at; 0)

@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Compiler_General
@@ -18,4 +18,4 @@
 // ----------------------------------------------------
 
 
-C_TEXT:C284(<>Gen_Colon_t;<>Gen_MoneyFormat_t)
+C_TEXT(<>Gen_Colon_t; <>Gen_MoneyFormat_t)

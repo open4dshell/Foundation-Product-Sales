@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Invoices_UpdateContactInfo
@@ -20,12 +20,12 @@
 // ----------------------------------------------------
 
 
-READ ONLY:C145([Contacts:4])
-QUERY:C277([Contacts:4];[Contacts:4]Contact_ID:1=[Invoices:6]Contact_ID:2)
+READ ONLY([Contacts])
+QUERY([Contacts]; [Contacts]Contact_ID=[Invoices]Contact_ID)
 
 Invoices_ContactName_t:=Invoices_GetContactInfo
 
-If ([Invoices:6]Contact_ID:2>0)
+If ([Invoices]Contact_ID>0)
 	DISABLE BUTTON(->Invoices_NewContactButton_i)
 	DISABLE BUTTON(->Invoices_SelectContactButton_i)
 	ENABLE BUTTON(->Invoices_ClearContactButton_i)

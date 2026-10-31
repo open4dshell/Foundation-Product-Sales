@@ -8,9 +8,14 @@
 // Created by 4D, Inc. on May 2, 2003
 // ----------------------------------------------------
 If (Fnd_Gen_ComponentAvailable("iLB@"))
-	EXECUTE METHOD:C1007("iLB_StartUp")
+	EXECUTE METHOD("iLB_StartUp")
 End if 
 //iLB_StartUp 
+
+
+
+
+
 
 Fnd_Shell_OnStartup
 

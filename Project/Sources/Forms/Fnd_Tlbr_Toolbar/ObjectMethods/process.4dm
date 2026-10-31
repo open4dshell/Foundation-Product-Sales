@@ -1,20 +1,20 @@
 // Object Method: FP.process
 // ----------------------------------------------------
 
-C_TEXT:C284($Text_t)
-C_OBJECT:C1216($fnd)
+C_TEXT($Text_t)
+C_OBJECT($fnd)
 
-If (Form event code:C388=On Load:K2:1)
-	OBJECT SET VISIBLE:C603(*;"process";(Not:C34(Is compiled mode:C492) | (Shift down:C543)))
+If (Form event code=On Load)
+	OBJECT SET VISIBLE(*; "process"; (Not(Is compiled mode) | (Shift down)))
 	
 Else 
 	$fnd:=Fnd_Shell_GetFndObject
-	If ($fnd#Null:C1517)
-		$Text_t:=JSON Stringify:C1217($fnd;*)
+	If ($fnd#Null)
+		$Text_t:=JSON Stringify($fnd; *)
 	Else 
-		$Text_t:=JSON Stringify:C1217(New object:C1471)
+		$Text_t:=JSON Stringify(New object)
 	End if 
-	SET TEXT TO PASTEBOARD:C523($Text_t)
+	SET TEXT TO PASTEBOARD($Text_t)
 	
 End if 
 

@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Compiler_Methods
 
@@ -12,157 +12,145 @@
 // Nothing
 
 // Created by Walt Nelson on 1/22/11
+// WBS, 2026-09-13 - Type the FPS logging host probe (FND-26)
+// WBS, 2026-09-13 - Preserve developer cleanup of absent iLB and host typing
+// WBS, 2026-09-13 - Type read-only server log observation
 // ----------------------------------------------------
 
 
-C_TEXT:C284(Contacts_FullAddress;$0)
-C_BOOLEAN:C305(Contacts_FullAddress;$1)
-C_BOOLEAN:C305(Contacts_FullAddress;$2)
-C_TEXT:C284(Contacts_FullName;$0)
-C_TEXT:C284(Invoices_GetContactInfo;$0)
-C_LONGINT:C283(Invoices_SelectContact;$0)
-C_LONGINT:C283(LineItems_SelectProduct;$0)
-C_BOOLEAN:C305(Contacts_IsUSA;$0)
-C_TEXT:C284(Contacts_IsUSA;$1)
+C_OBJECT(Fnd_Test_Logging; $1)
+C_OBJECT(Fnd_Test_LogServer; $0)
+C_TEXT(Fnd_Test_LogServer; $1)
+C_TEXT(Contacts_FullAddress; $0)
+C_BOOLEAN(Contacts_FullAddress; $1)
+C_BOOLEAN(Contacts_FullAddress; $2)
+C_TEXT(Contacts_FullName; $0)
+C_TEXT(Invoices_GetContactInfo; $0)
+C_LONGINT(Invoices_SelectContact; $0)
+C_LONGINT(LineItems_SelectProduct; $0)
+C_BOOLEAN(Contacts_IsUSA; $0)
+C_TEXT(Contacts_IsUSA; $1)
 
-C_VARIANT:C1683(DISABLE BUTTON;$1)
-C_VARIANT:C1683(ENABLE BUTTON;$1)
+C_VARIANT(DISABLE BUTTON; $1)
+C_VARIANT(ENABLE BUTTON; $1)
 
-
+C_OBJECT(Fnd_Hook_Out_RowStyle; $0)
 
 //Fnd_Hook_IO_InputFormButton
-C_BOOLEAN:C305(Fnd_Hook_IO_InputFormButton;$0)
-C_TEXT:C284(Fnd_Hook_IO_InputFormButton;$1)
+C_BOOLEAN(Fnd_Hook_IO_InputFormButton; $0)
+C_TEXT(Fnd_Hook_IO_InputFormButton; $1)
 
 //Fnd_Hook_Rec_Delete
-C_BOOLEAN:C305(Fnd_Hook_Rec_Delete;$0)
+C_BOOLEAN(Fnd_Hook_Rec_Delete; $0)
 
 //Fnd_Hook_Rec_New
-C_BOOLEAN:C305(Fnd_Hook_Rec_New;$0)
-C_POINTER:C301(Fnd_Hook_Rec_New;$1)
+C_BOOLEAN(Fnd_Hook_Rec_New; $0)
+C_POINTER(Fnd_Hook_Rec_New; $1)
 
 //Fnd_Hook_Shell_Quit
-C_BOOLEAN:C305(Fnd_Hook_Shell_Quit;$0)
+// Entry retired 2026-08-15: the regenerated method declares itself with
+//   #DECLARE, and a typing entry alongside #DECLARE is a compile error.
+//C_BOOLEAN(Fnd_Hook_Shell_Quit; $0)
 
 //Fnd_Hook_SqNo_SetIDField
-C_POINTER:C301(Fnd_Hook_SqNo_SetIDField;$0)
-C_POINTER:C301(Fnd_Hook_SqNo_SetIDField;$1)
+C_POINTER(Fnd_Hook_SqNo_SetIDField; $0)
+C_POINTER(Fnd_Hook_SqNo_SetIDField; $1)
 
 //Fnd_Host_GetFormProperties
-C_POINTER:C301(Fnd_Host_GetFormProperties;$1)
-C_TEXT:C284(Fnd_Host_GetFormProperties;$2)
-C_POINTER:C301(Fnd_Host_GetFormProperties;$3)
-C_POINTER:C301(Fnd_Host_GetFormProperties;$4)
+C_POINTER(Fnd_Host_GetFormProperties; $1)
+C_TEXT(Fnd_Host_GetFormProperties; $2)
+C_POINTER(Fnd_Host_GetFormProperties; $3)
+C_POINTER(Fnd_Host_GetFormProperties; $4)
 
 //Fnd_Host_GetPictureFromLibrary
-C_TEXT:C284(Fnd_Host_GetPictureFromLibrary;$1)
-C_POINTER:C301(Fnd_Host_GetPictureFromLibrary;$2)
+C_TEXT(Fnd_Host_GetPictureFromLibrary; $1)
+C_POINTER(Fnd_Host_GetPictureFromLibrary; $2)
 
 //Fnd_Host_ExecuteFormula
-C_TEXT:C284(Fnd_Host_ExecuteFormula;$1)
-C_POINTER:C301(Fnd_Host_ExecuteFormula;$2)
+C_TEXT(Fnd_Host_ExecuteFormula; $1)
+C_POINTER(Fnd_Host_ExecuteFormula; $2)
 
 //Fnd_Host_ListToArray
-C_TEXT:C284(Fnd_Host_ListToArray;$1)
-C_POINTER:C301(Fnd_Host_ListToArray;$2)
+C_TEXT(Fnd_Host_ListToArray; $1)
+C_POINTER(Fnd_Host_ListToArray; $2)
 
 //Fnd_Host_GetIntegerValue
-C_LONGINT:C283(Fnd_Host_GetIntegerValue;$0)
-C_TEXT:C284(Fnd_Host_GetIntegerValue;$1)
+C_LONGINT(Fnd_Host_GetIntegerValue; $0)
+C_TEXT(Fnd_Host_GetIntegerValue; $1)
 
 //Fnd_Host_ArrayToList
-C_POINTER:C301(Fnd_Host_ArrayToList;$1)
-C_TEXT:C284(Fnd_Host_ArrayToList;$2)
+C_POINTER(Fnd_Host_ArrayToList; $1)
+C_TEXT(Fnd_Host_ArrayToList; $2)
 
 //Fnd_Host_Tlbr_SetBtnPict
-C_LONGINT:C283(Fnd_Host_Tlbr_SetBtnPict;$1)
-C_PICTURE:C286(Fnd_Host_Tlbr_SetBtnPict;$2)
+C_LONGINT(Fnd_Host_Tlbr_SetBtnPict; $1)
+C_PICTURE(Fnd_Host_Tlbr_SetBtnPict; $2)
 
 //Fnd_Host_Tlbr_SetMessage
-C_TEXT:C284(Fnd_Host_Tlbr_SetMessage;$1)
+C_TEXT(Fnd_Host_Tlbr_SetMessage; $1)
 
 //Fnd_Host_Tlbr_ButtonClck
-C_POINTER:C301(Fnd_Host_Tlbr_ButtonClck;$1)
+C_POINTER(Fnd_Host_Tlbr_ButtonClck; $1)
 
 //Fnd_Host_IO_DisplayDialog
-C_TEXT:C284(Fnd_Host_IO_DisplayDialog;$1)
+C_TEXT(Fnd_Host_IO_DisplayDialog; $1)
 
-//iLB_Hook_Default_Def
-C_LONGINT:C283(iLB_Hook_Default_Def;$0)
-C_LONGINT:C283(iLB_Hook_Default_Def;$1)
-C_LONGINT:C283(iLB_Hook_Default_Def;$2)
 
-//iLB_Hook_Load_Def
-C_TEXT:C284(iLB_Hook_Load_Def;$0)
-C_LONGINT:C283(iLB_Hook_Load_Def;$1)
-C_LONGINT:C283(iLB_Hook_Load_Def;$2)
-
-//iLB_Hook_Save_Def
-C_LONGINT:C283(iLB_Hook_Save_Def;$0)
-C_TEXT:C284(iLB_Hook_Save_Def;$1)
-C_LONGINT:C283(iLB_Hook_Save_Def;$2)
-C_LONGINT:C283(iLB_Hook_Save_Def;$3)
-
-//iLB_Hook_TableBrowser2
-C_LONGINT:C283(iLB_Hook_TableBrowser2;$0)
-C_LONGINT:C283(iLB_Hook_TableBrowser2;$1)
-C_LONGINT:C283(iLB_Hook_TableBrowser2;$2)
-
-//iLB_Hook_Load_ViewArrays
-C_LONGINT:C283(iLB_Hook_Load_ViewArrays;$0)
-C_LONGINT:C283(iLB_Hook_Load_ViewArrays;$1)
-C_POINTER:C301(iLB_Hook_Load_ViewArrays;$2)
-C_POINTER:C301(iLB_Hook_Load_ViewArrays;$3)
-
-//iLB_Hook_OutputFormMethod
-C_LONGINT:C283(iLB_Hook_OutputFormMethod;$0)
-C_POINTER:C301(iLB_Hook_OutputFormMethod;$1)
-
-//iLB_Hook_ObjectMethod
-C_LONGINT:C283(iLB_Hook_ObjectMethod;$0)
-C_POINTER:C301(iLB_Hook_ObjectMethod;$1)
-C_LONGINT:C283(iLB_Hook_ObjectMethod;$2)
-C_LONGINT:C283(iLB_Hook_ObjectMethod;$3)
-
-//iLB_Hook_ChoiceListToArray
-C_LONGINT:C283(iLB_Hook_ChoiceListToArray;$1)
-C_LONGINT:C283(iLB_Hook_ChoiceListToArray;$2)
-C_POINTER:C301(iLB_Hook_ChoiceListToArray;$3)
-
-//iLB_Host_ListToArray
-C_TEXT:C284(iLB_Host_ListToArray;$1)
-C_POINTER:C301(iLB_Host_ListToArray;$2)
-
-//iLB_Host_ChoiceListsToArray
-C_POINTER:C301(iLB_Host_ChoiceListsToArray;$1)
-C_POINTER:C301(iLB_Host_ChoiceListsToArray;$2)
 
 //Fnd_Host_SaveList
-C_TEXT:C284(Fnd_Host_SaveList;$1)
-C_BLOB:C604(Fnd_Host_SaveList;$2)
+C_TEXT(Fnd_Host_SaveList; $1)
+C_BLOB(Fnd_Host_SaveList; $2)
 
-//iLB_Hook_Sort
-C_LONGINT:C283(iLB_Hook_Sort;$0)
-C_LONGINT:C283(iLB_Hook_Sort;$1)
-C_LONGINT:C283(iLB_Hook_Sort;$2)
-C_LONGINT:C283(iLB_Hook_Sort;$3)
-C_LONGINT:C283(iLB_Hook_Sort;$4)
 
-//iLB_Hook_BrowserMenu
-C_TEXT:C284(iLB_Hook_BrowserMenu;$0)
-C_LONGINT:C283(iLB_Hook_BrowserMenu;$1)
-C_TEXT:C284(iLB_Hook_BrowserMenu;$2)
 
-//iLB_Host_QuickReport
-C_POINTER:C301(iLB_Host_QuickReport;$1)
 
-//iLB_Hook_Delete_Def
-C_LONGINT:C283(iLB_Hook_Delete_Def;$0)
-C_LONGINT:C283(iLB_Hook_Delete_Def;$1)
-C_LONGINT:C283(iLB_Hook_Delete_Def;$2)
+//contactName
+C_TEXT(contactName; $0)
 
-//iLB_Hook_Duplicate_Def
-C_LONGINT:C283(iLB_Hook_Duplicate_Def;$0)
-C_LONGINT:C283(iLB_Hook_Duplicate_Def;$1)
-C_LONGINT:C283(iLB_Hook_Duplicate_Def;$2)
-C_LONGINT:C283(iLB_Hook_Duplicate_Def;$3)
+//Fnd_FCS_CompilationPath
+C_TEXT(Fnd_FCS_CompilationPath; $0)
+
+//Fnd_FCS_CompilerCheck
+C_BOOLEAN(Fnd_FCS_CompilerCheck; $1)
+C_TEXT(Fnd_FCS_CompilerCheck; $2)
+C_TEXT(Fnd_FCS_CompilerCheck; $3)
+
+//Fnd_FCS_RequestEcho
+C_OBJECT(Fnd_FCS_RequestEcho; $0)
+C_TEXT(Fnd_FCS_RequestEcho; $1)
+C_TEXT(Fnd_FCS_RequestEcho; $2)
+
+//Fnd_FCS_TestRunner
+C_TEXT(Fnd_FCS_TestRunner; $1)
+C_TEXT(Fnd_FCS_TestRunner; $2)
+
+//Fnd_FCS_WriteFailedResult
+C_TEXT(Fnd_FCS_WriteFailedResult; $1)
+C_TEXT(Fnd_FCS_WriteFailedResult; $2)
+C_TEXT(Fnd_FCS_WriteFailedResult; $3)
+
+//Fnd_Hook_Shell_Quit
+C_BOOLEAN(Fnd_Hook_Shell_Quit; $0)
+
+//Fnd_Host_IO_DisplayDialog
+C_OBJECT(Fnd_Host_IO_DisplayDialog; $2)
+C_BOOLEAN(Fnd_Host_IO_DisplayDialog; $3)
+
+//Fnd_Test_Assert
+C_BOOLEAN(Fnd_Test_Assert; $1)
+C_TEXT(Fnd_Test_Assert; $2)
+
+//Fnd_Test_Begin
+C_TEXT(Fnd_Test_Begin; $1)
+
+//Fnd_Test_End
+C_BOOLEAN(Fnd_Test_End; $1)
+
+//Fnd_Test_Stamp
+C_TEXT(Fnd_Test_Stamp; $0)
+
+//Fnd_Test_Variadics
+C_VARIANT(Fnd_Test_Variadics; $1)
+
+//LBOX_highValue
+C_OBJECT(LBOX_highValue; $0)

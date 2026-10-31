@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Compiler_LineItems
@@ -22,20 +22,20 @@
 
 // Variables
 
-C_LONGINT:C283(LINEITEMS_OKBUTTON_I)
-C_LONGINT:C283(LINEITEMS_CANCELBUTTON_I)
-C_REAL:C285(LINEITEMS_EXTENDED_R)
-C_TEXT:C284(LINEITEMS_PRODUCTNUMBER_T)
+C_LONGINT(LINEITEMS_OKBUTTON_I)
+C_LONGINT(LINEITEMS_CANCELBUTTON_I)
+C_REAL(LINEITEMS_EXTENDED_R)
+C_TEXT(LINEITEMS_PRODUCTNUMBER_T)
 
 // Interprocess Variables
 
 
 // Arrays
 
-ARRAY TEXT:C222(LINEITEMS_PRODUCTNAMES_AT;0)
-ARRAY TEXT:C222(LINEITEMS_PRODUCTNUMBERS_AT;0)
-ARRAY REAL:C219(LINEITEMS_PRODUCTPRICES_AR;0)
+ARRAY TEXT(LINEITEMS_PRODUCTNAMES_AT; 0)
+ARRAY TEXT(LINEITEMS_PRODUCTNUMBERS_AT; 0)
+ARRAY REAL(LINEITEMS_PRODUCTPRICES_AR; 0)
 
 // Parameters
 
-C_LONGINT:C283(LineItems_SelectProduct;$0)
+C_LONGINT(LineItems_SelectProduct; $0)

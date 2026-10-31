@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Rec_Delete --> Boolean
 
@@ -17,12 +17,12 @@
 //   $0 : Boolean : Allow Foundation to handle the request?
 // ----------------------------------------------------
 
-C_BOOLEAN:C305($0)
+C_BOOLEAN($0)
 
-$0:=True:C214  // Let Foundation handle it.
+$0:=True  // Let Foundation handle it.
 
 
-If (True:C214)
+If (True)
 	// do something
 Else 
 	// do something else

@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_IO_DisplayRecord
 
@@ -29,18 +29,18 @@
 
 
 Case of 
-	: (Fnd_Gen_CurrentTable=(->[Company Info:8]))
-		Fnd_Wnd_Title(Fnd_Loc_GetString("Loc_Company";"CompanySettings"))
-		Fnd_Wnd_Type(Plain fixed size window:K34:6)
-		Fnd_Wnd_CloseBox(False:C215)
-		Fnd_IO_DisplayNavButtons(False:C215)
+	: (Fnd_Gen_CurrentTable=(->[CompanyInfo]))
+		Fnd_Wnd_Title(Fnd_Loc_GetString("Loc_Company"; "CompanySettings"))
+		Fnd_Wnd_Type(Plain fixed size window)
+		Fnd_Wnd_CloseBox(False)
+		Fnd_IO_DisplayNavButtons(False)
 		
-	: (Fnd_Gen_CurrentTable=(->[Contacts:4]))
+	: (Fnd_Gen_CurrentTable=(->[Contacts]))
 		Fnd_Wnd_Title("Contact: "+Contacts_FullName)  // See also Contacts_UpdateWindowTitle.
 		
-	: (Fnd_Gen_CurrentTable=(->[Invoices:6]))
-		If ([Invoices:6]Invoice Number:3#0)  // not a new record
-			Fnd_Wnd_Title("Invoice: "+String:C10([Invoices:6]Invoice Number:3;"|Invoices_InvoiceNumberFormat"))
+	: (Fnd_Gen_CurrentTable=(->[Invoices]))
+		If ([Invoices]InvoiceNumber#0)  // not a new record
+			Fnd_Wnd_Title("Invoice: "+String([Invoices]InvoiceNumber; "|Invoices_InvoiceNumberFormat"))
 		End if 
 		
 End case 

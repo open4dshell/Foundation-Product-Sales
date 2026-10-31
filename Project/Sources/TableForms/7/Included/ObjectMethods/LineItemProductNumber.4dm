@@ -15,43 +15,43 @@
 // ----------------------------------------------------
 
 
-C_LONGINT:C283($productID)
+C_LONGINT($productID)
 
 Case of 
-	: (Form event code:C388=On Data Change:K2:15)
-		READ ONLY:C145([Products:5])
+	: (Form event code=On Data Change)
+		READ ONLY([Products])
 		
-		If (Self:C308->="")
-			REDUCE SELECTION:C351([Products:5];0)
+		If (Self->="")
+			REDUCE SELECTION([Products]; 0)
 			
 		Else 
-			QUERY:C277([Products:5];[Products:5]Product Number:2=(Self:C308->+"@"))
+			QUERY([Products]; [Products]ProductNumber=(Self->+"@"))
 			
 			Case of 
-				: (Records in selection:C76([Products:5])=0)
-					ALL RECORDS:C47([Products:5])
+				: (Records in selection([Products])=0)
+					ALL RECORDS([Products])
 					$productID:=LineItems_SelectProduct
 					If (OK=1)
-						QUERY:C277([Products:5];[Products:5]Product_ID:1=$productID)
+						QUERY([Products]; [Products]Product_ID=$productID)
 					Else 
-						REDUCE SELECTION:C351([Products:5];0)
+						REDUCE SELECTION([Products]; 0)
 					End if 
 					
-				: (Records in selection:C76([Products:5])>1)
+				: (Records in selection([Products])>1)
 					$productID:=LineItems_SelectProduct
 					If (OK=1)
-						QUERY:C277([Products:5];[Products:5]Product_ID:1=$productID)
+						QUERY([Products]; [Products]Product_ID=$productID)
 					Else 
-						REDUCE SELECTION:C351([Products:5];0)
+						REDUCE SELECTION([Products]; 0)
 					End if 
 			End case 
 		End if 
 		
 		
-		Self:C308->:=[Products:5]Product Number:2
-		[Line Items:7]Product_ID:3:=[Products:5]Product_ID:1
-		[Line Items:7]List Price:5:=[Products:5]List Price:5
-		[Line Items:7]Sell Price:6:=[Line Items:7]List Price:5
+		Self->:=[Products]ProductNumber
+		[LineItems]Product_ID:=[Products]Product_ID
+		[LineItems]ListPrice:=[Products]ListPrice
+		[LineItems]SellPrice:=[LineItems]ListPrice
 		
 		LineItems_UpdateExtended
 End case 

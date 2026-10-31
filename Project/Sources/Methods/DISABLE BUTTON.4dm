@@ -1,5 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
-//%attributes = {}
+//%attributes = {"invisible":true,"shared":true,"lang":"en"}
 // ----------------------------------------------------
 // Project Method: DISABLE BUTTON (Button Name or Pointer)
 
@@ -12,8 +11,8 @@
 
 //     wayne@4dsupport.guru
 // ----------------------------------------------------
-If (False:C215)
-	C_VARIANT:C1683(DISABLE BUTTON;$1)
+If (False)
+	C_VARIANT(DISABLE BUTTON; $1)
 End if 
 
 /*  USAGE NOTES
@@ -45,19 +44,19 @@ The text substitution is the same.
 */
 
 
-C_VARIANT:C1683($1)  // The button
-C_LONGINT:C283($Type_i)
-$Type_i:=Value type:C1509($1)
+C_VARIANT($1)  // The button
+C_LONGINT($Type_i)
+$Type_i:=Value type($1)
 
 Case of 
-	: ($Type_i=Is text:K8:3)
-		OBJECT SET ENABLED:C1123(*;$1;False:C215)
+	: ($Type_i=Is text)
+		OBJECT SET ENABLED(*; $1; False)
 		
-	: ($Type_i=Is pointer:K8:14)
-		OBJECT SET ENABLED:C1123($1->;False:C215)
+	: ($Type_i=Is pointer)
+		OBJECT SET ENABLED($1->; False)
 		
 	Else 
-		Fnd_Gen_BugAlert(Current method name:C684;"Unexpected parameter type: "+String:C10($Type_i))
+		Fnd_Gen_BugAlert(Current method name; "Unexpected parameter type: "+String($Type_i))
 		
 End case 
 

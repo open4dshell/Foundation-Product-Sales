@@ -8,7 +8,7 @@
 
 
 Case of 
-	: (Form event code:C388=On Printing Detail:K2:18)
-		OBJECT SET FORMAT:C236([Invoices:6]Subtotal:5;<>Gen_MoneyFormat_t)  // DB040829 - Added
-		OBJECT SET FORMAT:C236([Invoices:6]Total:8;<>Gen_MoneyFormat_t)  // DB040829 - Added
+	: (Form event code=On Printing Detail)
+		OBJECT SET FORMAT([Invoices]Subtotal; <>Gen_MoneyFormat_t)  // DB040829 - Added
+		OBJECT SET FORMAT([Invoices]Total; <>Gen_MoneyFormat_t)  // DB040829 - Added
 End case 

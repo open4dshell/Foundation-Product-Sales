@@ -1,7 +1,7 @@
 Class extends Entity
 
 Function fullName()->$result : Text
-	$result:=This:C1470.FirstName+" "+This:C1470.LastName
+	$result:=This.FirstName+" "+This.LastName
 	
 Function reversedFullName->$result : Text
-	$result:=This:C1470.LastName+", "+This:C1470.FirstName
+	$result:=This.LastName+", "+This.FirstName

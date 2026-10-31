@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Company_EditSettings
 
@@ -15,12 +15,12 @@
 // Created by 4D, Inc. on May 2, 2003
 // ----------------------------------------------------
 
-READ ONLY:C145([Company Info:8])  // We'll be editing the record in a new process.
-ALL RECORDS:C47([Company Info:8])
+READ ONLY([CompanyInfo])  // We'll be editing the record in a new process.
+ALL RECORDS([CompanyInfo])
 
 // Notice the behavior of the window opened here is set in Fnd_aa_IO_DisplayRecord.
-If (Records in selection:C76([Company Info:8])=0)
-	Fnd_Rec_NewRecord(->[Company Info:8])
+If (Records in selection([CompanyInfo])=0)
+	Fnd_Rec_NewRecord(->[CompanyInfo])
 Else 
-	Fnd_IO_DisplayRecord(->[Company Info:8];Record number:C243([Company Info:8]))
+	Fnd_IO_DisplayRecord(->[CompanyInfo]; Record number([CompanyInfo]))
 End if 

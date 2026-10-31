@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Shell_Startup
 
@@ -16,11 +16,10 @@
 //   Added some code to handle money formats.
 // ----------------------------------------------------
 
-C_TEXT:C284($testString_t; $decimal_t)
-
+var $testString_t; $decimal_t : Text
 var $i; $delayUntilTicks_i : Integer
 
-$testString_t:=String:C10(1.1)
+$testString_t:=String(1.1)
 
 Case of 
 	: ($testString_t="1.1")
@@ -52,7 +51,7 @@ End case
 
 Fnd_Shell_ExcludeFromQuit("AdminWorker")
 For ($i; 0; 4)
-	Fnd_Shell_ExcludeFromQuit("Spare Process "+String:C10($i))
+	Fnd_Shell_ExcludeFromQuit("Spare Process "+String($i))
 End for 
 
 Fnd_Shell_ExcludeFromQuit("$DevQuickOpenListener")
@@ -73,7 +72,7 @@ Fnd_Shell_ExcludeFromQuit("DevQuickOpenWorker")
 Fnd_Shell_ExcludeFromQuit("Fnd_Shell_Quitter")
 Fnd_Shell_ExcludeFromQuit("Fnd_SqNo_Distributor process")
 Fnd_Shell_ExcludeFromQuit("Internal Time Process")
-Fnd_Shell_ExcludeFromQuit(Log Flusher)
+Fnd_Shell_ExcludeFromQuit("Log Flusher")
 Fnd_Shell_ExcludeFromQuit("Log Maintenance")
 Fnd_Shell_ExcludeFromQuit("Log Writer")
 //  2026-08-06T00:00 : REL-267: Sched_Dispatch is the worker that Sched.register
@@ -81,6 +80,7 @@ Fnd_Shell_ExcludeFromQuit("Log Writer")
 //  list it here alongside Sched_Loop so the static list stays complete.
 Fnd_Shell_ExcludeFromQuit("Sched_Dispatch")
 Fnd_Shell_ExcludeFromQuit("Sched_Loop")
+Fnd_Shell_ExcludeFromQuit("$Fnd_FCS_SchedStart")
 Fnd_Shell_ExcludeFromQuit("Spare Process 0")
 Fnd_Shell_ExcludeFromQuit("Spare Process 1")
 Fnd_Shell_ExcludeFromQuit("Spare Process 2")
@@ -159,25 +159,30 @@ Fnd_Shell_ExcludeFromQuit("theStamper")
 
 
 
-If (Records in table:C83([Invoices:6])=0)
+If (Records in table([Invoices])=0)
 	Fnd_SqNo_Set("Invoice Number"; 1001)  // Start invoices at this number. Don't localize this.
 End if 
 
-If (Fnd_Pref_GetBoolean("Display Contacts at Startup"; True:C214))
-	Fnd_IO_DisplayTable(->[Contacts:4])  // Display the Contacts table window.
+If (Fnd_Pref_GetBoolean("Display Contacts at Startup"; True))
+	Fnd_IO_DisplayTable(->[Contacts])  // Display the Contacts table window.
 End if 
 
-If (Fnd_Pref_GetBoolean("Display Invoices at Startup"; True:C214))
-	Fnd_IO_DisplayTable(->[Invoices:6])  // Just for this demo.
+If (Fnd_Pref_GetBoolean("Display Invoices at Startup"; True))
+	Fnd_IO_DisplayTable(->[Invoices])  // Just for this demo.
 End if 
 
 //If there's no [Company Info] record, display the edit window so the user
 //   can create a record.
-If (Records in table:C83([CompanyInfo:8])=0)
+If (Records in table([CompanyInfo])=0)
 	// Delay for one second first, so this window will open up in front of the Contacts window.
-	$delayUntilTicks_i:=Tickcount:C458+60  // 60 ticks = 1 second
+	$delayUntilTicks_i:=Tickcount+60  // 60 ticks = 1 second
 	Repeat 
-		IDLE:C311  // Can't use DELAY PROCESS since we're probably be in the User/Custom Menus process.
-	Until (Tickcount:C458>$delayUntilTicks_i)
+		IDLE  // Can't use DELAY PROCESS since we're probably be in the User/Custom Menus process.
+	Until (Tickcount>$delayUntilTicks_i)
 	Company_EditSettings
 End if 
+
+
+
+Fnd_FCS_SchedStart  // Started last
+

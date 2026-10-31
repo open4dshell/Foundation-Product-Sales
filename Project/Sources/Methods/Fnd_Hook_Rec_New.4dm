@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Rec_New (->table) --> Boolean
 
@@ -15,7 +15,7 @@
 //   $0 : Boolean : Allow Foundation to handle the request?
 // ----------------------------------------------------
 
-C_BOOLEAN:C305($0)
-C_POINTER:C301($1)
+C_BOOLEAN($0)
+C_POINTER($1)
 
-$0:=True:C214  // True = Let Foundation handle it.
+$0:=True  // True = Let Foundation handle it.

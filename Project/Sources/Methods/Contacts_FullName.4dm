@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Contacts_FullName
@@ -20,8 +20,8 @@
 // ----------------------------------------------------
 
 
-C_TEXT:C284($0;$fullName)
+C_TEXT($0; $fullName)
 
-$fullName:=[Contacts:4]First Name:2+" "+[Contacts:4]Last Name:3
+$fullName:=[Contacts]FirstName+" "+[Contacts]LastName
 
 $0:=$fullName

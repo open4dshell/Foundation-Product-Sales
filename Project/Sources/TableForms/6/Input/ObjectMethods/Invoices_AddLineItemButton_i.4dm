@@ -9,11 +9,11 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		CREATE RECORD:C68([Line Items:7])
+	: (Form event code=On Clicked)
+		CREATE RECORD([LineItems])
 		Fnd_SqNo_SetRecordID
-		[Line Items:7]Invoice_ID:2:=[Invoices:6]Invoice_ID:1
-		[Line Items:7]Quantity:4:=1
-		SAVE RECORD:C53([Line Items:7])
+		[LineItems]Invoice_ID:=[Invoices]Invoice_ID
+		[LineItems]Quantity:=1
+		SAVE RECORD([LineItems])
 		Invoices_LoadRelatedLineItems
 End case 

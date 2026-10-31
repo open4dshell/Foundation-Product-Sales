@@ -1,0 +1,25 @@
+﻿{
+	"offer": {
+		"hide": [
+			"invoice.Contact_ID",
+			"invoice.Invoice_ID",
+			"Product_ID",
+			"Invoice_ID",
+			"invoice.contact.City",
+			"invoice.contact.Address",
+			"invoice.contact.Web Site",
+			"invoice.contact.State",
+			"invoice.contact.PostalCode",
+			"invoice.contact.Phone",
+			"invoice.contact.Notes",
+			"invoice.contact.LastName",
+			"invoice.contact.FirstName",
+			"invoice.contact.Fax"
+		],
+		"only": []
+	},
+	"formulas": [],
+	"builtInLayouts": [],
+	"appearance": {},
+	"allowCustomColumns": true
+}

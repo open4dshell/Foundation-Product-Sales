@@ -1,1 +1,1 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"lang":"en"}

@@ -14,7 +14,7 @@
 
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
-		Fnd_IO_DisplayRecord(->[Invoices:6];Record number:C243([Invoices:6]))
-		CANCEL:C270
+	: (Form event code=On Load)
+		Fnd_IO_DisplayRecord(->[Invoices]; Record number([Invoices]))
+		CANCEL
 End case 

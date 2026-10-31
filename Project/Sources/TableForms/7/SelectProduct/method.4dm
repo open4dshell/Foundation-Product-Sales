@@ -12,19 +12,19 @@
 // ----------------------------------------------------
 
 
-C_LONGINT:C283($move_i)
+C_LONGINT($move_i)
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
+	: (Form event code=On Load)
 		// Localize the OK and Canel buttons.
 		
-		$move_i:=Fnd_Gen_ButtonText(->LineItems_OKButton_i;Fnd_Loc_GetString("Loc_General";"OKButton");Align right:K42:4)
-		OBJECT MOVE:C664(LineItems_CancelButton_i;$move_i;0)
-		Fnd_Gen_ButtonText(->LineItems_CancelButton_i;Fnd_Loc_GetString("Loc_General";"CancelButton");Align right:K42:4)
+		$move_i:=Fnd_Gen_ButtonText(->LineItems_OKButton_i; Fnd_Loc_GetString("Loc_General"; "OKButton"); Align right)
+		OBJECT MOVE(LineItems_CancelButton_i; $move_i; 0)
+		Fnd_Gen_ButtonText(->LineItems_CancelButton_i; Fnd_Loc_GetString("Loc_General"; "CancelButton"); Align right)
 		
-		OBJECT SET FORMAT:C236(LineItems_ProductPrices_ar;<>Gen_MoneyFormat_t)  // DB040829 - Added
+		OBJECT SET FORMAT(LineItems_ProductPrices_ar; <>Gen_MoneyFormat_t)  // DB040829 - Added
 		
-		OBJECT SET TITLE:C194(*;"ProductNumberHeader";<>Products_SelectNumberLabel_t)
+		OBJECT SET TITLE(*; "ProductNumberHeader"; <>Products_SelectNumberLabel_t)
 		
 End case 
 

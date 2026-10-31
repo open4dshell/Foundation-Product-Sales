@@ -9,6 +9,6 @@
 
 
 Case of 
-	: (Form event code:C388=On Data Change:K2:15)
-		Self:C308->:=Fnd_Data_FormatWebURL(Self:C308->)
+	: (Form event code=On Data Change)
+		Self->:=Fnd_Data_FormatWebURL(Self->)
 End case 

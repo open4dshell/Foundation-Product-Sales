@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_SqNo_SetIDField (->table) --> Pointer
 
@@ -17,7 +17,7 @@
 //   $0 : Pointer : A pointer to the table's key field
 // ----------------------------------------------------
 
-C_POINTER:C301($0;$1;$table_ptr;$keyField_ptr)
+C_POINTER($0; $1; $table_ptr; $keyField_ptr)
 
 $table_ptr:=$1
 

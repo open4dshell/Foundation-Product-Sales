@@ -9,7 +9,7 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		DELETE RECORD:C58([Line Items:7])
+	: (Form event code=On Clicked)
+		DELETE RECORD([LineItems])
 		Invoices_UpdateTotal
 End case 

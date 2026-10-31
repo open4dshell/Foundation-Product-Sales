@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: LineItems_UpdateExtended
@@ -24,9 +24,9 @@
 // ----------------------------------------------------
 
 
-[Line Items:7]Extended:7:=Round:C94([Line Items:7]Quantity:4*[Line Items:7]Sell Price:6;2)
-SAVE RECORD:C53([Line Items:7])
+[LineItems]Extended:=Round([LineItems]Quantity*[LineItems]SellPrice; 2)
+SAVE RECORD([LineItems])
 
-If ([Invoices:6]Invoice_ID:1=[Line Items:7]Invoice_ID:2)
+If ([Invoices]Invoice_ID=[LineItems]Invoice_ID)
 	Invoices_UpdateTotal
 End if 

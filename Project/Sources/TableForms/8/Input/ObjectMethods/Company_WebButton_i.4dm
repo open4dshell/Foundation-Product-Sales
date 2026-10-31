@@ -9,6 +9,6 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		OPEN URL:C673([Company Info:8]Web Site:7;*)
+	: (Form event code=On Clicked)
+		OPEN URL([CompanyInfo]WebSite; *)
 End case 

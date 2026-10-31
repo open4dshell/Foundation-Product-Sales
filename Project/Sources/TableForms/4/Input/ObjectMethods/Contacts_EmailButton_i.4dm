@@ -8,12 +8,12 @@
 // ----------------------------------------------------
 
 
-C_TEXT:C284($url)
+C_TEXT($url)
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		If ([Contacts:4]Email Address:12#"")
-			$url:="mailto:"+[Contacts:4]Email Address:12
-			OPEN URL:C673($url;*)
+	: (Form event code=On Clicked)
+		If ([Contacts]EmailAddress#"")
+			$url:="mailto:"+[Contacts]EmailAddress
+			OPEN URL($url; *)
 		End if 
 End case 

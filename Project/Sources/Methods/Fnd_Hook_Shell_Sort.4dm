@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Shell_Sort
 
@@ -11,13 +11,13 @@
 
 // Returns: Nothing
 // ----------------------------------------------------
-C_OBJECT:C1216($es)
-C_BOOLEAN:C305($usingFndOut_b)
+C_OBJECT($es)
+C_BOOLEAN($usingFndOut_b)
 
 
 
 
-If (Macintosh option down:C545)  // Also works for the Windows' Alt key.
+If (Macintosh option down)  // Also works for the Windows' Alt key.
 	Fnd_Menu_SortOrderEditor  // Display 4D's Order By Editor.
 	
 Else 
@@ -28,11 +28,11 @@ Else
 	//         Fnd_Sort_AddField (->[Companies]Company Name)
 	// End case 
 	
-	$usingFndOut_b:=Fnd_Gen_ComponentInfo("Fnd_Out";"state")="active"
+	$usingFndOut_b:=Fnd_Gen_ComponentInfo("Fnd_Out"; "state")="active"
 	If ($usingFndOut_b)
 		Fnd_Out_SynchroniseSelection
 		Fnd_Sort_Display  // Display Foundation's Sort dialog.
-		Form:C1466.listData:=Create entity selection:C1512(Fnd_Gen_CurrentTable->).copy()
+		Form.listData:=Create entity selection(Fnd_Gen_CurrentTable->).copy()
 		Fnd_Out_Update
 	Else 
 		Fnd_Sort_Display  // Display Foundation's Sort dialog.

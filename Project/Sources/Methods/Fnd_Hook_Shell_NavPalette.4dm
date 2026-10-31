@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_Shell_NavPalette
 
@@ -15,10 +15,14 @@
 // Specify the buttons to display on the Navigation Palette.
 // Or do nothing, and Foundation will display the visible tables.
 
-Fnd_Nav_AddButtonTable(->[Contacts:4];"";Foreground color:K23:1;0x00C6D4FC)
-Fnd_Nav_AddButtonTable(->[Invoices:6];"";Foreground color:K23:1;0x00C6D4FC)
-Fnd_Nav_AddButtonTable(->[Products:5];"";Foreground color:K23:1;0x00C6D4FC)
+Fnd_Nav_AddButtonTable(->[Contacts]; ""; Foreground color; 0x00C6D4FC)
+Fnd_Nav_AddButtonTable(->[Invoices]; ""; Foreground color; 0x00C6D4FC)
+Fnd_Nav_AddButtonTable(->[Products]; ""; Foreground color; 0x00C6D4FC)
+Fnd_Nav_AddButtonTable(->[LineItems]; ""; Foreground color; 0x00C6D4FC)
 
-Fnd_Nav_AddButtonMethod("Fnd_IO_DisplayRecord(->[Invoices];-3)";Fnd_Loc_GetString("Loc_General";"NewSaleButton");Foreground color:K23:1;0x00E2FFDF)
+
+Fnd_Nav_AddButtonMethod("Fnd_IO_DisplayRecord(->[Invoices];-3)"; Fnd_Loc_GetString("Loc_General"; "NewSaleButton"); Foreground color; 0x00E2FFDF)
+
+Fnd_Nav_AddButtonMethod("Fnd_Pref_Editor"; "Prefs Explorer"; 0x00FF; 0x00FFFF00)
 
 Fnd_Nav_Display

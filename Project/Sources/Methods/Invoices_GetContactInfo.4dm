@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Invoices_GetContactInfo
@@ -24,12 +24,12 @@
 // ----------------------------------------------------
 
 
-C_TEXT:C284($0;$info_t)
+C_TEXT($0; $info_t)
 
-If (Records in selection:C76([Contacts:4])=1)
+If (Records in selection([Contacts])=1)
 	$info_t:=Contacts_FullName
-	If ([Contacts:4]Company:4#"")
-		$info_t:=$info_t+", "+[Contacts:4]Company:4
+	If ([Contacts]Company#"")
+		$info_t:=$info_t+", "+[Contacts]Company
 	End if 
 Else 
 	$info_t:=""

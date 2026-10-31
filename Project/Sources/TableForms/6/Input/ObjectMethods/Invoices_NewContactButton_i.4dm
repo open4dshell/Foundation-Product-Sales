@@ -9,6 +9,6 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		Fnd_IO_DisplayRecord(->[Contacts:4];New record:K29:1)
+	: (Form event code=On Clicked)
+		Fnd_IO_DisplayRecord(->[Contacts]; New record)
 End case 

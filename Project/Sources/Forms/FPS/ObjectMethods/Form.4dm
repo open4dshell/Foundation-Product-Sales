@@ -1,18 +1,18 @@
-  // Object Method: FP.Form
-  // ----------------------------------------------------
+// Object Method: FP.Form
+// ----------------------------------------------------
 
 
-C_TEXT:C284($Text_t)
+C_TEXT($Text_t)
 
-If (Form event code:C388=On Load:K2:1)
-	OBJECT SET VISIBLE:C603(*;"Form";(Not:C34(Is compiled mode:C492) | (Shift down:C543)))
+If (Form event code=On Load)
+	OBJECT SET VISIBLE(*; "Form"; (Not(Is compiled mode) | (Shift down)))
 	
 Else 
-	If (Form:C1466#Null:C1517)
-		$Text_t:=JSON Stringify:C1217(Form:C1466;*)
+	If (Form#Null)
+		$Text_t:=JSON Stringify(Form; *)
 	Else 
-		$Text_t:=JSON Stringify:C1217(New object:C1471)
+		$Text_t:=JSON Stringify(New object)
 	End if 
-	SET TEXT TO PASTEBOARD:C523($Text_t)
+	SET TEXT TO PASTEBOARD($Text_t)
 	
 End if 

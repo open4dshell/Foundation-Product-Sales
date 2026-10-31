@@ -1,4 +1,18 @@
 {
+	"Fnd_FCS": {
+		"methods": [
+			"Fnd_FCS_CompilationPath",
+			"Fnd_FCS_CompilerCheck",
+			"Fnd_FCS_CompilerCheckOnErr",
+			"Fnd_FCS_RequestEcho",
+			"Fnd_FCS_SchedRelaunch",
+			"Fnd_FCS_SchedStart",
+			"Fnd_FCS_SchedStop",
+			"Fnd_FCS_TestRunner",
+			"Fnd_FCS_TestRunnerOnErr",
+			"Fnd_FCS_WriteFailedResult"
+		]
+	},
 	"Fnd_Forms": {
 		"forms": [
 			"Fnd_IO_InputForm",
@@ -50,6 +64,9 @@
 			"Fnd_Test_Assert",
 			"Fnd_Test_Begin",
 			"Fnd_Test_End",
+			"Fnd_Test_Logging",
+			"Fnd_Test_LogServer",
+			"Fnd_Test_Release",
 			"Fnd_Test_Stamp",
 			"Fnd_Test_Variadics"
 		]
@@ -80,6 +97,7 @@
 	},
 	"Foundation 5": {
 		"groups": [
+			"Fnd_FCS",
 			"Fnd_Forms",
 			"Fnd_Project_Methods",
 			"Fnd_Tables"

@@ -8,6 +8,6 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		Fnd_Tlbr_Button_OnShortcut(Char:C90(DEL ASCII code:K15:34))
+	: (Form event code=On Clicked)
+		Fnd_Tlbr_Button_OnShortcut(Char(DEL ASCII code))
 End case 

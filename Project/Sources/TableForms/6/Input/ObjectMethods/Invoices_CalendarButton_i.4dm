@@ -5,6 +5,6 @@
 // ----------------------------------------------------
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		Fnd_Date_Calendar(->[Invoices:6]Invoice Date:4)
+	: (Form event code=On Clicked)
+		Fnd_Date_Calendar(->[Invoices]InvoiceDate)
 End case 

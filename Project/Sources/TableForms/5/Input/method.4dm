@@ -13,13 +13,13 @@
 
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
+	: (Form event code=On Load)
 		Fnd_SqNo_SetRecordID
 		
-		Fnd_Loc_FixLabelWidths(-><>Products_NumberLabel_t;->[Products:5]Product Number:2;-><>Products_NameLabel_t;->[Products:5]Product Name:3;-><>Products_DescriptionLabel_t;->[Products:5]Description:4)
-		Fnd_Loc_FixLabelWidths(-><>Products_PriceLabel_t;->[Products:5]List Price:5)
+		Fnd_Loc_FixLabelWidths(-><>Products_NumberLabel_t; ->[Products]ProductNumber; -><>Products_NameLabel_t; ->[Products]ProductName; -><>Products_DescriptionLabel_t; ->[Products]Description)
+		Fnd_Loc_FixLabelWidths(-><>Products_PriceLabel_t; ->[Products]ListPrice)
 		
-		OBJECT SET FORMAT:C236([Products:5]List Price:5;<>Gen_MoneyFormat_t)
+		OBJECT SET FORMAT([Products]ListPrice; <>Gen_MoneyFormat_t)
 End case 
 
 Fnd_IO_InputFormMethod

@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: LineItems_SelectProduct --> Longint
 
@@ -15,17 +15,17 @@
 // Created by 4D, Inc. on May 2, 2003
 // ----------------------------------------------------
 
-C_LONGINT:C283($0)
+C_LONGINT($0)
 
-ORDER BY:C49([Products:5];[Products:5]Product Number:2;>)
-SELECTION TO ARRAY:C260([Products:5]Product_ID:1;$aProductIDs;[Products:5]Product Number:2;LineItems_ProductNumbers_at;[Products:5]Product Name:3;LineItems_ProductNames_at;[Products:5]List Price:5;LineItems_ProductPrices_ar)
+ORDER BY([Products]; [Products]ProductNumber; >)
+SELECTION TO ARRAY([Products]Product_ID; $aProductIDs; [Products]ProductNumber; LineItems_ProductNumbers_at; [Products]ProductName; LineItems_ProductNames_at; [Products]ListPrice; LineItems_ProductPrices_ar)
 
-Fnd_Wnd_Type(Movable form dialog box:K39:8)
+Fnd_Wnd_Type(Movable form dialog box)
 Fnd_Wnd_Position(Fnd_Wnd_MacOSXSheet)
-Fnd_Wnd_Title(Fnd_Loc_GetString("Loc_Products";"SelectWindowTitle"))
-Fnd_Wnd_OpenFormWindow(->[Line Items:7];"SelectProduct")
-DIALOG:C40([Line Items:7];"SelectProduct")
-CLOSE WINDOW:C154
+Fnd_Wnd_Title(Fnd_Loc_GetString("Loc_Products"; "SelectWindowTitle"))
+Fnd_Wnd_OpenFormWindow(->[LineItems]; "SelectProduct")
+DIALOG([LineItems]; "SelectProduct")
+CLOSE WINDOW
 
 If (OK=1)
 	$0:=$aProductIDs{LineItems_ProductNames_at}
@@ -34,6 +34,6 @@ Else
 End if 
 
 // Clear the process arrays to release the RAM they're using.
-ARRAY TEXT:C222(LineItems_ProductNumbers_at;0)
-ARRAY TEXT:C222(LineItems_ProductNames_at;0)
-ARRAY REAL:C219(LineItems_ProductPrices_ar;0)
+ARRAY TEXT(LineItems_ProductNumbers_at; 0)
+ARRAY TEXT(LineItems_ProductNames_at; 0)
+ARRAY REAL(LineItems_ProductPrices_ar; 0)

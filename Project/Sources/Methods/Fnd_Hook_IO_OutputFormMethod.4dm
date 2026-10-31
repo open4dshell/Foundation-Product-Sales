@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Fnd_Project_Methods","lang":"en"}
 // ----------------------------------------------------
 // Project Method: Fnd_Hook_IO_OutputFormMethod
 
@@ -18,17 +18,16 @@
 var $formEventCode_i : Integer
 var $currentTable_ptr : Pointer
 
-$formEventCode_i:=Form event code:C388
+$formEventCode_i:=Form event code
 $currentTable_ptr:=Fnd_Gen_CurrentTable
 
 
 Case of 
-	: ($formEventCode_i=On Load:K2:1)
+	: ($formEventCode_i=On Load)
 		
 		Case of 
-			: ($currentTable_ptr=(->[Invoices:6])) | ($currentTable_ptr=(->[Products:5]))\
+			: ($currentTable_ptr=(->[Invoices])) | ($currentTable_ptr=(->[Products]))
 				
-				LISTBOX SET PROPERTY:C1440(*; "Fnd_Out_ListBox"; lk meta expression:K53:75; "LBOX_highValue")
 				
 				
 				

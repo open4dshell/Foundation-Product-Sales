@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"folder":"Project_Methods","lang":"en"}
 // ----------------------------------------------------
 
 // Project Method: Compiler_Company
@@ -22,26 +22,26 @@
 
 // Variables
 
-C_LONGINT:C283(COMPANY_CANCELBUTTON_I)
-C_LONGINT:C283(COMPANY_OKBUTTON_I)
-C_LONGINT:C283(COMPANY_EMAILBUTTON_I)
-C_LONGINT:C283(COMPANY_WEBBUTTON_I)
+C_LONGINT(COMPANY_CANCELBUTTON_I)
+C_LONGINT(COMPANY_OKBUTTON_I)
+C_LONGINT(COMPANY_EMAILBUTTON_I)
+C_LONGINT(COMPANY_WEBBUTTON_I)
 
 // Interprocess Variables
 
-C_TEXT:C284(<>Company_NameLabel_t)
-C_TEXT:C284(<>Company_AddressLabel_t)
-C_TEXT:C284(<>Company_PhoneLabel_t)
-C_TEXT:C284(<>Company_VoiceLabel_t)
-C_TEXT:C284(<>Company_FaxLabel_t)
-C_TEXT:C284(<>Company_EmailLabel_t)
-C_TEXT:C284(<>Company_WebSiteLabel_t)
-C_TEXT:C284(<>Company_InvoiceLabel_t)
-C_TEXT:C284(<>Company_TermsLabel_t)
+C_TEXT(<>Company_NameLabel_t)
+C_TEXT(<>Company_AddressLabel_t)
+C_TEXT(<>Company_PhoneLabel_t)
+C_TEXT(<>Company_VoiceLabel_t)
+C_TEXT(<>Company_FaxLabel_t)
+C_TEXT(<>Company_EmailLabel_t)
+C_TEXT(<>Company_WebSiteLabel_t)
+C_TEXT(<>Company_InvoiceLabel_t)
+C_TEXT(<>Company_TermsLabel_t)
 
 // Arrays
 
-ARRAY TEXT:C222(COMPANY_TERMSPOPUP_AT;0)
+ARRAY TEXT(COMPANY_TERMSPOPUP_AT; 0)
 
 // Parameters
 

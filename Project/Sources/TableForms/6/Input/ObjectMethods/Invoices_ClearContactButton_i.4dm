@@ -9,7 +9,7 @@
 
 
 Case of 
-	: (Form event code:C388=On Clicked:K2:4)
-		[Invoices:6]Contact_ID:2:=0
+	: (Form event code=On Clicked)
+		[Invoices]Contact_ID:=0
 		Invoices_UpdateContactInfo
 End case 
