@@ -22,5 +22,5 @@ place for Foundation problems found through this database.
 
 ## Licence
 
-MIT, as Foundation. Copyright © 1993–2008 Dave Batton, 2008–2026 Nelson
-Consulting, Inc. / Walt Nelson, 2026 Wayne Stewart.
+Public domain, under [the Unlicense](LICENSE): copy it, change it, build on
+it, no attribution required. Foundation itself is MIT; see its repository.
