@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Foundation download, guide and documentation
+    url: https://foundation.open4dshell.com
+    about: The component for your 4D, the developer guide and the method reference.

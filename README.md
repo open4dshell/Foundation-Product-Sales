@@ -16,9 +16,9 @@ and the About box.
 
 ## Reporting problems
 
-Open an Issue in this repository, saying which 4D and which Foundation target
-you used. During the Foundation 6 beta this is also the place for Foundation
-problems found through this database.
+Open an Issue in this repository; the Problem template asks for your 4D
+version and Foundation target. During the Foundation 6 beta this is also the
+place for Foundation problems found through this database.
 
 ## Licence
 
