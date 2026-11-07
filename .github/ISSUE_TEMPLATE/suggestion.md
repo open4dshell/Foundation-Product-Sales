@@ -10,4 +10,4 @@ labels: enhancement
 What it would let you do in your own application, or what it would make simpler.
 
 **Foundation target and version**
-For example: 21L, 6.0.0-beta.1
+For example: 21L, 6.0.0-beta.2

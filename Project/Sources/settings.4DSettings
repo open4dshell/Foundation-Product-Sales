@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="13">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="14">
 	<com.4d>
 		<database>
 			<cache flush_buffer_delay="15" size_fixed="32" size_maximum="100" size_reserved="128"/>
@@ -25,7 +25,7 @@
 			</network>
 		</server>
 		<compiler>
-			<options compilation_path="1"/>
+			<options compilation_path="3" error_file="true" symbol_file="true" target="all"/>
 			<typage default_for_button="2" default_for_numeric="1"/>
 		</compiler>
 		<sql>

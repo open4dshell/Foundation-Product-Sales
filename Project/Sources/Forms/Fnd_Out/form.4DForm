@@ -33,7 +33,7 @@
 					"type": "listbox",
 					"left": 0,
 					"top": 75,
-					"width": 469,
+					"width": 830,
 					"height": 375,
 					"events": [
 						"onClick",
@@ -44,7 +44,7 @@
 						"onColumnResize"
 					],
 					"listboxType": "collection",
-					"right": 469,
+					"right": 830,
 					"bottom": 450,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -60,6 +60,22 @@
 					"rowStrokeSource": "",
 					"metaSource": "",
 					"columns": []
+				},
+				"Fnd_Out_Search": {
+					"type": "subform",
+					"left": 618,
+					"top": 13,
+					"width": 198,
+					"height": 31,
+					"sizingX": "move",
+					"detailForm": "Fnd_Out_Search",
+					"focusable": true,
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
 				},
 				"cmd-w": {
 					"type": "button",
@@ -103,7 +119,7 @@
 		}
 	],
 	"inheritedForm": "Fnd_Tlbr_Toolbar",
-	"geometryStamp": 25,
+	"geometryStamp": 52,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

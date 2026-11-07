@@ -33,6 +33,7 @@
 			"Fnd_Hook_IO_SelectionChanged",
 			"Fnd_Hook_List_SetEditableLists",
 			"Fnd_Hook_Menu_UpdateMenuBar",
+			"Fnd_Hook_Out_SearchFields",
 			"Fnd_Hook_Rec_Delete",
 			"Fnd_Hook_Rec_New",
 			"Fnd_Hook_Shell_Administration",
