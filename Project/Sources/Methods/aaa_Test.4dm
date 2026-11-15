@@ -4,9 +4,10 @@
 //  Method is an autostart type
 // ----------------------------------------------------
 
-#DECLARE($mode_t : Text)
+//#DECLARE($mode_t : Text)
 
 var $ProcessID_i; $StackSize_i; $WindowID_i; $i_i; $last_i : Integer
+var $w_i; $h_i : Integer
 var $Form_t; $DesiredProcessName_t; $t : Text
 
 // ----------------------------------------------------
@@ -15,12 +16,17 @@ $StackSize_i:=0
 $Form_t:=""
 $DesiredProcessName_t:=Current method name
 
+
 Case of 
 	: (Current process name=$DesiredProcessName_t)
 		RELOAD PROJECT
 		DELAY PROCESS(Current process; 30)
 		
-		Fnd_Shell_Documentation
+		
+		SET TEXT TO PASTEBOARD($t)
+		ALERT($t)
+		
+		
 		
 	Else 
 		// This version allows for any number of processes

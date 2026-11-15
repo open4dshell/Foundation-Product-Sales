@@ -25,4 +25,5 @@ Fnd_Nav_AddButtonMethod("Fnd_IO_DisplayRecord(->[Invoices];-3)"; Fnd_Loc_GetStri
 
 Fnd_Nav_AddButtonMethod("Fnd_Pref_Editor"; "Prefs Explorer"; 0x00FF; 0x00FFFF00)
 
+
 Fnd_Nav_Display

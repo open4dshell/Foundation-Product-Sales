@@ -1,0 +1,9 @@
+Foundation Product Sales needs the Foundation component in this folder.
+
+1. Download Foundation for your 4D from https://foundation.open4dshell.com
+   (20 LTS, 20 R, 21 LTS or 21 R; macOS DMG or Windows ZIP).
+2. Put Foundation.4dbase in this folder, beside this note.
+3. Open Project/Foundation Product Sales.4DProject.
+
+For development you can instead put the Foundation project folder itself here
+(interpreted). Foundation is released under the MIT licence.

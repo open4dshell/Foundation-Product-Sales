@@ -2157,7 +2157,7 @@
 				"collapsed": true
 			},
 			{
-				"text": "Number",
+				"text": "No.",
 				"ref": 5,
 				"editable": true,
 				"collapsed": true
@@ -4180,6 +4180,12 @@
 				"text": "Paid",
 				"ref": 6,
 				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Pay whenever you can",
+				"ref": 0,
+				"editable": false,
 				"collapsed": true
 			}
 		]

@@ -8,7 +8,7 @@ labels: bug
 For example: 4D 20.9, macOS 26 / 4D 21 R4, Windows 11
 
 **Foundation target and version**
-For example: 21L, 6.0.0-beta.2 (the About box shows both)
+For example: 21L, 6.0.0-beta.3 (the About box shows both)
 
 **Where**
 Foundation itself, or this database (which window or menu command)
