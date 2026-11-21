@@ -1,0 +1,65 @@
+﻿{
+	"offer": {
+		"hide": [
+			"LastName",
+			"FirstName",
+			"Formula: this.fullName()",
+			"PostalCode"
+		],
+		"only": []
+	},
+	"formulas": [
+		{
+			"formula": "this.fullName()",
+			"title": "Contact",
+			"type": 2
+		},
+		{
+			"formula": "this.reversedFullName()",
+			"title": "Contact Reversed",
+			"type": 2
+		}
+	],
+	"builtInLayouts": [],
+	"appearance": {},
+	"allowCustomColumns": true,
+	"standard": {
+		"name": "Standard",
+		"visibleColumns": [
+			"Formula: this.fullName()",
+			"Formula: this.reversedFullName()"
+		],
+		"columns": [
+			{
+				"columnNumber": 1,
+				"columnName": "Contact_ID_Col",
+				"columnWidth": 100,
+				"headerTitle": "Contact_ID"
+			},
+			{
+				"columnNumber": 2,
+				"columnName": "Formula: this_fullName()_Col",
+				"columnWidth": 182,
+				"headerTitle": "Contact"
+			},
+			{
+				"columnNumber": 3,
+				"columnName": "Formula: this_reversedFullName()_Col",
+				"columnWidth": 633,
+				"headerTitle": "Contact Reversed"
+			}
+		],
+		"fontName": "",
+		"textSize": 12,
+		"rowHeight": 0,
+		"rowPixels": 0,
+		"fillColor": null,
+		"altFillColor": null,
+		"columnOverrides": {
+			"Formula: this.reversedFullName()": {
+				"fo_fontName": "JetBrains Mono"
+			}
+		},
+		"rowStyle": []
+	}
+}

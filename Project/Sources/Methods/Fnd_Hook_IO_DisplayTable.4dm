@@ -14,6 +14,7 @@
 // ----------------------------------------------------
 
 // Use Fnd_Gen_CurrentTable to determine the current table.
+//   It returns a pointer to the table this window is displaying.
 
 // To change the default output form:
 //  Fnd_IO_OutputFormName ("MyOutput")
@@ -35,12 +36,10 @@ Fnd_Out_Default("allowPublish"; True)
 Case of 
 	: (Fnd_Gen_CurrentTable=(->[Invoices]))
 		Fnd_Tlbr_Style("Small2")
-		Fnd_Out_Active(True)
 		Fnd_Out_AddField("InvoiceNumber"; 0; "Inv. No")
 		Fnd_Out_AddField("InvoiceDate"; 0; "Date")
 		Fnd_Out_AddField("contact.reversedFullName()"; 0; "Contact")
 		Fnd_Out_AddField("Total"; 0; ""; 0; <>Gen_MoneyFormat_t)
-		
 		
 	: (Fnd_Gen_CurrentTable=(->[Contacts]))
 		Fnd_Out_AddField(New object(\
@@ -52,13 +51,8 @@ Case of
 			fo_type; Is text; \
 			fo_style; Italic; \
 			fo_title; "Contact Reversed"))
-		Fnd_Out_Active(True)
-		
-		
 		
 	: (Fnd_Gen_CurrentTable=(->[Products]))
-		
-		Fnd_Out_Active(True)
 		Fnd_Out_AllowCustomColumns(True)
 		Fnd_IO_ToolbarIconGroup("Card")
 		Fnd_IO_MultiWindow(False)  // Display the input form in the same window as the output form.
@@ -82,4 +76,5 @@ Case of
 		
 		
 End case 
+
 

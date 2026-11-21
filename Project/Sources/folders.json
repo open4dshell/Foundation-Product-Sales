@@ -15,10 +15,6 @@
 	},
 	"Fnd_Forms": {
 		"forms": [
-			"Fnd_IO_InputForm",
-			"Fnd_IO_InputTemplate",
-			"Fnd_IO_OutputTemplate",
-			"Fnd_Tlbr_Toolbar",
 			"Preferences"
 		]
 	},
@@ -41,7 +37,6 @@
 			"Fnd_Hook_Shell_InitPlugins",
 			"Fnd_Hook_Shell_ModifyRecords",
 			"Fnd_Hook_Shell_NavPalette",
-			"Fnd_Hook_Shell_OpenTable",
 			"Fnd_Hook_Shell_Print",
 			"Fnd_Hook_Shell_QueryEditor",
 			"Fnd_Hook_Shell_Quit",

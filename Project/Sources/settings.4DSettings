@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="34">
 	<com.4d>
 		<database>
 			<cache flush_buffer_delay="15" size_fixed="32" size_maximum="100" size_reserved="128"/>
@@ -8,7 +8,7 @@
 			<mover always_display_dialog="2"/>
 		</general>
 		<interface>
-			<user can_change_password="false" formula_editor_with_full_lists="true" print_progress="false" splash_screen="true"/>
+			<user can_change_password="false" color_scheme="inherited" formula_editor_with_full_lists="true" print_progress="false" splash_screen="true"/>
 			<misc/>
 			<shortcuts>
 				<add_subform key_code="47" shift="false"/>

@@ -22,9 +22,10 @@ Case of
 		RELOAD PROJECT
 		DELAY PROCESS(Current process; 30)
 		
+		Fnd_Shell_Installer
 		
-		SET TEXT TO PASTEBOARD($t)
-		ALERT($t)
+		//SET TEXT TO PASTEBOARD($t)
+		//ALERT($t)
 		
 		
 		
