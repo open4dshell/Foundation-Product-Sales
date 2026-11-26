@@ -1,0 +1,1 @@
+<!--SetMenuBarignoredParameter : Longint : ➡️ : An ignored parameter-->## SetMenuBarSetMenuBarDoesn't do anything other than not cause errors.Part of the Foundation Compatibility component.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||ignoredParameter|Longint|➡️|An ignored parameter|

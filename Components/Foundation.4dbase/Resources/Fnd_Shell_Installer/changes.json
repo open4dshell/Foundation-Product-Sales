@@ -1,0 +1,40 @@
+[
+	{
+		"version": "6.0.0-rc.1",
+		"items": [
+			"The release candidate for 6.0.0. Nothing needs to be done in your database beyond running the installer, as for beta.4.",
+			"Command names added with Fnd_List_AddItem are now matched exactly: case matters, and @ is no longer a wildcard. If your own code adds a command under one spelling and refers to it under another, use one spelling.",
+			"Fnd_Gen_Reset now also forgets the current table, and Fnd_Loc_FixLabelWidths accepts object names as well as pointers.",
+			"More of Foundation's working state is kept in objects rather than process variables, including the toolbar, the localisation and sequence number editors, the registration dialog and the list window's View Options. Shared methods are unchanged.",
+			"In a list window, Cmd-Backspace (Ctrl-Backspace on Windows) now deletes the selected records, as the toolbar's Delete button does; before, it did nothing.",
+			"The toolbar form Fnd_Tlbr_Toolbar has two corrections: its Cmd-A shortcut (it was set to Option-A), and its status line, which was white on a light background in dark mode and is now black. The installer shows the form as superseded; replace it if your database uses dark mode or a toolbar shortcut A.",
+			"The list form Fnd_Out now alternates its rows in the colour scheme's own shade instead of a fixed light blue, so it reads properly in dark mode. The installer shows the form as superseded; replacing it is optional. Foundation's own lists (View Options, Manage Layouts, Preferences) follow dark mode too, and Option-click on a View Options colour swatch returns it to automatic.",
+			"The alert icons are refreshed: the note icon is Foundation's cog, and the warning and stop icons no longer show a white rim in dark mode. Fnd_Dlg_CustomIcon also accepts a POSIX path.",
+			"The installer now compares the hook methods already in your database with Foundation's versions of them. It can replace an unchanged older one, or apply Foundation's later changes to one you have edited when they do not overlap yours, each only if you tick it, and after saving your present code in a Foundation Backups folder.",
+			"A missing input form now gives a bug alert naming the table and form, instead of a 4D error, and nothing opens.",
+			"Modify Records opens its windows in a cascade instead of one on top of the next; the list window's counts take thousands separators; French text is no longer garbled.",
+			"Two additions for developers: Fnd_Gen_Assert checks an assumption and guards on it, and the Fnd_Dev methods run Foundation's compile-check watcher and documentation writers on your own database. Chapter 11 of the Guide describes both."
+		]
+	},
+	{
+		"version": "6.0.0-beta.4",
+		"items": [
+			"Run the installer once in each database after this release: it now has forms, pictures and table upgrades to offer.",
+			"The installer copies any missing host forms (Fnd_Tlbr_Toolbar, Fnd_IO_InputForm, the two templates and Fnd_Out) into your database, and their pictures into one folder, Resources/Foundation. A form or picture already there is never replaced, and a missing form now opens the installer at start-up.",
+			"Forms and pictures in your database that differ from Foundation's are listed as superseded or edited. Nothing is changed for you. To take the current version of a superseded form, delete its folder from your Forms folder and let the installer add it again; keep a form marked edited.",
+			"Foundation tables made by an earlier version that lack a primary key or journaling are listed under Table upgrades, each with what it needs, and upgraded on Install. Back up first, because rows with an empty or duplicate ID are renumbered.",
+			"What you save from the list window is now kept in Resources/Foundation/Fnd_Out. Files in the old Resources/Fnd_Out are still read until each table is next saved.",
+			"Save in the list's Layout menu now saves whatever layout is in force, including shared layouts, application layouts and Standard itself. A list also refreshes when its window comes to the front.",
+			"The eight buttons of Fnd_IO_InputForm no longer use process variables. A form already in your database keeps working; to match, clear each button's variable and remove the eight C_LONGINT lines from your compiler method.",
+			"Fnd_Find_Engine takes the search option (1 all, 2 selection, 3 add, 4 omit) as an optional second parameter and passes it to a custom search method as its fourth. If your own code calls it with a custom search method, pass the option too.",
+			"The Sort dialog sorts the list again and remembers the last sort. Navigation palette text and the calendar popup are readable in dark mode; the list window is not yet."
+		]
+	},
+	{
+		"version": "6.0.0-beta.3",
+		"items": [
+			"Foundation asks before it adds anything to your database. The installer lists the tables, hook methods, host methods and compiler method it would add, and Cancel adds nothing.",
+			"Fnd_Shell_Installer is new: run it in your own interpreted database at any time to see what Foundation would add, or to confirm that nothing is missing."
+		]
+	}
+]

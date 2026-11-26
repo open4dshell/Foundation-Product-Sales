@@ -1,0 +1,1 @@
+<!--Fnd_Menu_UpdateResources Does not require any parameters -->## Fnd\_Menu\_UpdateResourcesFnd\_Menu\_UpdateResourcesUpdates the 'STR#' resources in the structure file used for localizing menu titles.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_Nav_ButtonMethod (button number)buttonNumber : Longint : ➡️ : The button number-->## Fnd\_Nav\_ButtonMethodFnd\_Nav\_ButtonMethod (button number)Called from the navigation palette buttons.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||buttonNumber|Longint|➡️|The button number|

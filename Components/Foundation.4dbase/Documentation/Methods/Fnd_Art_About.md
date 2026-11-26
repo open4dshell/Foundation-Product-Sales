@@ -1,0 +1,1 @@
+<!--Fnd_Art_About Does not require any parameters -->## Fnd\_Art\_AboutFnd\_Art\_AboutDisplays the About Box dialog in a new process.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

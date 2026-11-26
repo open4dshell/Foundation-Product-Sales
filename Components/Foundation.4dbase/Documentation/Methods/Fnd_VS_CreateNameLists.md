@@ -1,0 +1,1 @@
+<!--Fnd_VS_CreateNameLists Does not require any parameters -->## Fnd\_VS\_CreateNameListsFnd\_VS\_CreateNameListsCreates the 4D lists that can be used by the virtual structure routines.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

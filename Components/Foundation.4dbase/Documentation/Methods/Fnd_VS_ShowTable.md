@@ -1,0 +1,1 @@
+<!--Fnd_VS_ShowTable (->table)table : Pointer : ➡️ : A pointer to the table to let the user see-->## Fnd\_VS\_ShowTableFnd\_VS\_ShowTable (->table)Adds a table to the virtual structure arrays.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||table|Pointer|➡️|A pointer to the table to let the user see|

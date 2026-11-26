@@ -1,0 +1,1 @@
+<!--Fnd_List_OnStartup Does not require any parameters -->## Fnd\_List\_OnStartupFnd\_List\_OnStartupCalled when the database is launched to determine if the lists in the structure file neeed to be updated from the lists in the data file.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

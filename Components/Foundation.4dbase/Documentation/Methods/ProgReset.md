@@ -1,0 +1,1 @@
+<!--ProgReset Does not require any parameters -->## ProgResetProgResetPart of the Foundation Compatibility component.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

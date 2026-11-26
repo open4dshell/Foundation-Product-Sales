@@ -1,0 +1,1 @@
+<!--Fnd_Prnt_Alert (message)message : Text : ➡️ : The alert message text-->## Fnd\_Prnt\_AlertFnd\_Prnt\_Alert (message)Displays an alert message. Uses the Foundation Dialog module alert if available.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||message|Text|➡️|The alert message text|

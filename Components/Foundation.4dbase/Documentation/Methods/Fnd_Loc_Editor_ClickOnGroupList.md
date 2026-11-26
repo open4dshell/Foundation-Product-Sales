@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor_ClickOnGroupList Does not require any parameters -->## Fnd\_Loc\_Editor\_ClickOnGroupListFnd\_Loc\_Editor\_ClickOnGroupListCalled from the localization editor when a group item is clicked, or when a higher-level list is clicked.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

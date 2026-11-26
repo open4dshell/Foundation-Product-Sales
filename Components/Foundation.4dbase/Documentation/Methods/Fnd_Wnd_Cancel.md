@@ -1,0 +1,1 @@
+<!--Fnd_Wnd_Cancel Does not require any parameters -->## Fnd\_Wnd\_CancelFnd\_Wnd\_CancelCalls the CANCEL command.Exists so that CANCEL can be reached from CALL FORM, which takes a method name and cannot be given a bare command.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

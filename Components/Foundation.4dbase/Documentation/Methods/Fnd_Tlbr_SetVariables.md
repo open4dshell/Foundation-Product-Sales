@@ -1,0 +1,1 @@
+<!--Fnd_Tlbr_SetVariables Does not require any parameters -->## Fnd\_Tlbr\_SetVariablesFnd\_Tlbr\_SetVariablesUpdates the toolbar variables depending on the current platform and size settings.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

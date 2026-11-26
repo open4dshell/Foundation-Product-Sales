@@ -1,0 +1,1 @@
+<!--Fnd_Test_End Does not require any parameters -->## Fnd\_Test\_EndFnd\_Test\_EndCloses a test method and writes the tally to the Fnd\_Test log. Call it as the last line of every test method, Foundation's or a host's.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

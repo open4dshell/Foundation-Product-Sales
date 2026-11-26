@@ -1,0 +1,1 @@
+<!--Fnd_Pref_Alert (message)message : Text : ➡️ : The alert message text-->## Fnd\_Pref\_AlertFnd\_Pref\_Alert (message)Displays an alert message.  Uses the Foundation Dialog module alert if available.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||message|Text|➡️|The alert message text|

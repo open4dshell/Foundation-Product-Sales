@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor_ClickOnCodesList Does not require any parameters -->## Fnd\_Loc\_Editor\_ClickOnCodesListFnd\_Loc\_Editor\_ClickOnCodesListCalled from the localization editor when a lookup code is clicked, or when a higher-level list is clicked.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

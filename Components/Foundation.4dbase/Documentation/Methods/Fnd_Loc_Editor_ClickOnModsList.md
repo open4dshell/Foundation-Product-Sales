@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor_ClickOnModsList Does not require any parameters -->## Fnd\_Loc\_Editor\_ClickOnModsListFnd\_Loc\_Editor\_ClickOnModsListCalled from the localization editor when a module name is clicked, or when another object changes the selected list itemAttributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

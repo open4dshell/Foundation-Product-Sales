@@ -1,0 +1,1 @@
+<!--Fnd_Log_Flush Does not require any parameters -->## Fnd\_Log\_FlushFnd\_Log\_Flush // Queue a flush for a label or all logs; returns before writes complete. Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

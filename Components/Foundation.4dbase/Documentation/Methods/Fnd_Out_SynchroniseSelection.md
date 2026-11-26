@@ -1,0 +1,1 @@
+<!--Fnd_Out_SynchroniseSelection Does not require any parameters -->## Fnd\_Out\_SynchroniseSelectionFnd\_Out\_SynchroniseSelectionUpdates the current record selection to match the displayed entity selection.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

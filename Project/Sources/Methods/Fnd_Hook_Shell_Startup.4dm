@@ -97,6 +97,11 @@ Fnd_Shell_ExcludeFromQuit("Syn_PullFromServer")
 Fnd_Shell_ExcludeFromQuit("Syn_PushToServer")
 Fnd_Shell_ExcludeFromQuit("theStamper")
 
+Fnd_Shell_ExcludeFromQuit("CA_ShowQuickLauncher")
+Fnd_Shell_ExcludeFromQuit("Snippet_ShowSelectorWindow")
+Fnd_Shell_ExcludeFromQuit("CA_ShowAnalysisWindow")
+
+
 
 // Create a localized colon string to use after field name labels & such.
 <>Gen_Colon_t:=Fnd_Loc_GetString("Loc_General"; "Colon")
@@ -158,7 +163,6 @@ Fnd_Shell_ExcludeFromQuit("theStamper")
 
 
 
-
 If (Records in table([Invoices])=0)
 	Fnd_SqNo_Set("Invoice Number"; 1001)  // Start invoices at this number. Don't localize this.
 End if 
@@ -180,6 +184,22 @@ If (Records in table([CompanyInfo])=0)
 		IDLE  // Can't use DELAY PROCESS since we're probably be in the User/Custom Menus process.
 	Until (Tickcount>$delayUntilTicks_i)
 	Company_EditSettings
+End if 
+
+ARRAY TEXT($Components_at; 0)
+COMPONENT LIST($Components_at)
+
+// Check for components, only if all four are present
+If (Find in array($Components_at; "ORD - Code Analysis")>0)
+	If (Find in array($Components_at; "Mainfest Generator")>0)
+		If (Find in array($Components_at; "CodeSnippets")>0)
+			If (Find in array($Components_at; "IH_Log")>0)
+				EXECUTE METHOD("CA_OnStartup")
+				EXECUTE METHOD("CA_ShowQuickLauncher")
+				EXECUTE METHOD("Snippet_ShowSelectorWindow")
+			End if 
+		End if 
+	End if 
 End if 
 
 

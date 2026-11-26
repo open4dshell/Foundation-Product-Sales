@@ -1,0 +1,1 @@
+<!--Fnd_Art_StartupDialogFormMethod Does not require any parameters -->## Fnd\_Art\_StartupDialogFormMethodFnd\_Art\_StartupDialogFormMethodMust be called from the startup dialog's form method, even if a custom form is used.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

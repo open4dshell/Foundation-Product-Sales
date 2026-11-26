@@ -1,0 +1,1 @@
+<!--Fnd_List_Localize Does not require any parameters -->## Fnd\_List\_LocalizeFnd\_List\_LocalizePassed the localization strings to the General and (if available) Localization components.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_List_AddButton (label)label : Text : ➡️ : The new button's label-->## Fnd\_List\_AddButtonFnd\_List\_AddButton (label)Allows the developer to add an additional button to the Choice List dialog.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||label|Text|➡️|The new button's label|

@@ -1,0 +1,1 @@
+<!--Fnd_Dict_Retain (dict ID)dictionary : Longint : ➡️ : Dictionary ID-->## Fnd\_Dict\_RetainFnd\_Dict\_Retain (dict ID)Increments the retain count for a dictionary.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||dictionary|Longint|➡️|Dictionary ID|

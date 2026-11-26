@@ -1,0 +1,1 @@
+<!--Fnd_Nav_AutoConfigure Does not require any parameters -->## Fnd\_Nav\_AutoConfigureFnd\_Nav\_AutoConfigureAutomatically determines the contents of the Navigation Palette.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

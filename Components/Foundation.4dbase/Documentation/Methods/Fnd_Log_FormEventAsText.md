@@ -1,0 +1,1 @@
+<!--Fnd_Log_FormEventAsText -> TextResult : Type : ⬅️ : Description-->## Fnd\_Log\_FormEventAsTextFnd\_Log\_FormEventAsText --> TextReturns Form event Code as textAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Type|⬅️|Description|

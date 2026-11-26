@@ -1,0 +1,1 @@
+<!--Fnd_List_EditOne (list name)listName : Text : ➡️ : The name of the list-->## Fnd\_List\_EditOneFnd\_List\_EditOne (list name)Call this method to edit the specified list in a semi-modal dialog.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||listName|Text|➡️|The name of the list|

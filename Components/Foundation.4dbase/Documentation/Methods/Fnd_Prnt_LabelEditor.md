@@ -1,0 +1,1 @@
+<!--Fnd_Prnt_LabelEditorResult :  : ⬅️ : None-->## Fnd\_Prnt\_LabelEditorFnd\_Prnt\_LabelEditorDisplays 4D's built-in Label EditorAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result||⬅️|None|

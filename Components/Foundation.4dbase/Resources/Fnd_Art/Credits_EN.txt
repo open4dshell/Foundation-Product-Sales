@@ -1,0 +1,66 @@
+<span>
+<span style="font-weight:bold">Foundation<br/>
+<span>https://foundation.open4dshell.com</span><br/>
+<br/>
+Created by </span><br/>
+Dave Batton (1993–2008)<br/>
+<br/>
+<span style="font-weight:bold">Developed by </span><br/>
+Walt Nelson (2008–2026)<br/>
+<br/>
+<span style="font-weight:bold"><span>Open Source <br/>
+Maintained by </span><br/>
+</span>Wayne Stewart (2026–)<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Contributors</span><br/>
+</span></span>Arnaud de Montard<br/>
+Barclay Barry<br/>
+Cannon Smith<br/>
+Dani Beaubien<br/>
+Dave Batton<br/>
+Dave Nasralla<br/>
+David Dancy<br/>
+David Robbins<br/>
+Doug Hall<br/>
+Ed Fraser<br/>
+Ed Heckman<br/>
+Gary Boudreaux<br/>
+Gerald Balzer<br/>
+Graham Langley<br/>
+Guy Algot<br/>
+Jack Delay<br/>
+Jean Pierre Ribreau<br/>
+Jérôme Pupier<br/>
+John Craig<br/>
+Justin Leavens<br/>
+Ken Spence<br/>
+Marco Bernasconi<br/>
+Mark Mitchenall<br/>
+Mark Schaake<br/>
+Matthias Hertel<br/>
+Mike Erickson<br/>
+Owen Watson<br/>
+Peter Bozek<br/>
+Rob Laveaux<br/>
+Tom Dillon<br/>
+Vincent de Lachaux<br/>
+Vincent Tournier<br/>
+Walt Nelson<br/>
+Wayne Stewart<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Third-Party Modules</span><br/>
+</span></span>Constants and Object modules by Cannon Smith,<br/>
+Synergy Farm Solutions<br/>
+Toolbar Component by Mark Mitchenall,<br/>
+used with permission<br/>
+Date Entry component by Tom Dillon<br/>
+Dictionary module by Rob Laveaux<br/>
+Text comparison from Dani Beaubien's<br/>
+CodeAnalysis, after Matthias Hertel<br/>
+Developed with DevSync and DevQuickOpen,<br/>
+also by Cannon Smith<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Special Contributions</span><br/>
+</span>username</span><br/>
+<br/>
+Released under the MIT License</span>

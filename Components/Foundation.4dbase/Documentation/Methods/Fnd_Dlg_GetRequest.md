@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_GetRequest -> TextResult : Text : ⬅️ : The value entered by the user-->## Fnd\_Dlg\_GetRequestFnd\_Dlg\_GetRequest --> TextReturns the value entered by the user after displaying a Request dialog.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Text|⬅️|The value entered by the user|

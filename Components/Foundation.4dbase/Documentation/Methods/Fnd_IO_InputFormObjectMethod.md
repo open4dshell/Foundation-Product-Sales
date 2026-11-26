@@ -1,0 +1,1 @@
+<!--Fnd_IO_InputFormObjectMethod (->form object)object : Pointer : ➡️ : Form object-->## Fnd\_IO\_InputFormObjectMethodFnd\_IO\_InputFormObjectMethod (->form object)Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||object|Pointer|➡️|Form object|

@@ -1,0 +1,1 @@
+<!--Fnd_Log_Shutdown Does not require any parameters -->## Fnd\_Log\_ShutdownFnd\_Log\_Shutdown // Call after producers stop; queue local flush/close/stop without waiting. Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

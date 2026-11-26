@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="x-4DK#" original="x-undefined" source-language="x-none" target-language="x-none">
+    <body>
+      <group resname="themes">
+        <trans-unit id="thm_1" resname="0AAB6245CCF94FB19F59F1A5F18DD5BC" translate="no">
+          <source>Foundation</source>
+        </trans-unit>
+        <trans-unit id="thm_2" resname="3C8987319A11400182A5CF5E03342F53" translate="no">
+          <source>Foundation Dialog</source>
+        </trans-unit>
+        <trans-unit id="thm_3" resname="F5EB7D6448F84F9A94B81CCCCBBC60EC" translate="no">
+          <source>Foundation Find</source>
+        </trans-unit>
+        <trans-unit id="thm_4" resname="BED182B4B0C945749F10BC5F2BAEA69D" translate="no">
+          <source>Foundation Form Types</source>
+        </trans-unit>
+        <trans-unit id="thm_5" resname="602AF1E433354D0D81046F8064BEF355" translate="no">
+          <source>Foundation Log</source>
+        </trans-unit>
+        <trans-unit id="thm_6" resname="CF8F57C234004DD1A68D0619BE85E59C" translate="no">
+          <source>Foundation Miscellaneous</source>
+        </trans-unit>
+        <trans-unit id="thm_7" resname="64D91394FA6E4F309929B2E8ED34BF2F" translate="no">
+          <source>Foundation Types</source>
+        </trans-unit>
+        <trans-unit id="thm_8" resname="7FF33E1595B54EFF9F084FF8021B9E45" translate="no">
+          <source>Foundation Preferences</source>
+        </trans-unit>
+        <trans-unit id="thm_9" resname="88992A9D18264E1E92B9C1B935201676" translate="no">
+          <source>Foundation Registration</source>
+        </trans-unit>
+        <trans-unit id="thm_10" resname="DEDAA82BE9BC4700AFCA5360F412D76A" translate="no">
+          <source>Foundation Windows</source>
+        </trans-unit>
+        <trans-unit id="thm_11" resname="9D686381A8764BA5810339BD754DD805" translate="no">
+          <source>Foundation Password</source>
+        </trans-unit>
+        <trans-unit id="thm_12" resname="6AE5B35DB43E4373A7BA6F080656D3DA" translate="no">
+          <source>Foundation Out</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="0AAB6245CCF94FB19F59F1A5F18DD5BC" restype="x-4DK#">
+        <trans-unit d4:value="20261103:S" id="k_1">
+          <source>Fnd_LastConstantUpdate</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="3C8987319A11400182A5CF5E03342F53" restype="x-4DK#">
+        <trans-unit d4:value="1:L" id="k_2">
+          <source>Fnd_Dlg_CenterOnScreen</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_3">
+          <source>Fnd_Dlg_CentreOnScreen</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_4">
+          <source>Fnd_Dlg_CenterOnWindow</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_5">
+          <source>Fnd_Dlg_CentreOnWindow</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_6">
+          <source>Fnd_Dlg_DefaultIcon</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="k_7">
+          <source>Fnd_Dlg_MacOSXSheet</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_8">
+          <source>Fnd_Dlg_NoteIcon</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="k_9">
+          <source>Fnd_Dlg_StopIcon</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_10">
+          <source>Fnd_Dlg_WarnIcon</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="F5EB7D6448F84F9A94B81CCCCBBC60EC" restype="x-4DK#">
+        <trans-unit d4:value="Fnd_Find_DummyAttribute:S" id="k_11">
+          <source>Fnd_Find_DummyAttribute</source>
+        </trans-unit>
+        <trans-unit d4:value="Fnd_Find_Semaphore:S" id="k_12">
+          <source>Fnd_Find_Semaphore</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="BED182B4B0C945749F10BC5F2BAEA69D" restype="x-4DK#">
+        <trans-unit d4:value="6:L" id="k_13">
+          <source>Fnd_Gen_AboutForm</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="k_14">
+          <source>Fnd_Gen_InputForm</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="k_15">
+          <source>Fnd_Gen_ListEditorForm</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_16">
+          <source>Fnd_Gen_NoForm</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_17">
+          <source>Fnd_Gen_OutputForm</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="k_18">
+          <source>Fnd_Gen_PreferencesForm</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="k_19">
+          <source>Fnd_Gen_SqNoEditorForm</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_20">
+          <source>Fnd_Gen_UnknownForm</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="602AF1E433354D0D81046F8064BEF355" restype="x-4DK#">
+        <trans-unit d4:value="$Fnd_Log_Writer:S" id="k_21">
+          <source>Fnd_Log_Writer</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_22">
+          <source>Fnd_Log_LevelDefault</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_23">
+          <source>Fnd_Log_LevelInfo</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_24">
+          <source>Fnd_Log_LevelWarning</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="k_25">
+          <source>Fnd_Log_LevelError</source>
+        </trans-unit>
+        <trans-unit d4:value="-1:L" id="k_26">
+          <source>Fnd_Log_LevelNone</source>
+        </trans-unit>
+        <trans-unit d4:value="-2:L" id="k_27">
+          <source>Fnd_Log_LevelInherit</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_28">
+          <source>Fnd_Log_ToDefault</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_29">
+          <source>Fnd_Log_ToLocalFile</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_30">
+          <source>Fnd_Log_ToServerFile</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="k_31">
+          <source>Fnd_Log_ToRecord</source>
+        </trans-unit>
+        <trans-unit d4:value="logLevel:S" id="k_32">
+          <source>Fnd_Log_OptionLevel</source>
+        </trans-unit>
+        <trans-unit d4:value="logLabel:S" id="k_33">
+          <source>Fnd_Log_OptionLabel</source>
+        </trans-unit>
+        <trans-unit d4:value="destinations:S" id="k_34">
+          <source>Fnd_Log_OptionDestinations</source>
+        </trans-unit>
+        <trans-unit d4:value="flushNow:S" id="k_35">
+          <source>Fnd_Log_OptionFlushNow</source>
+        </trans-unit>
+        <trans-unit d4:value="useBatch:S" id="k_36">
+          <source>Fnd_Log_UseBatch</source>
+        </trans-unit>
+        <trans-unit d4:value="flushInterval:S" id="k_37">
+          <source>Fnd_Log_FlushInterval</source>
+        </trans-unit>
+        <trans-unit d4:value="flushEntryLimit:S" id="k_38">
+          <source>Fnd_Log_FlushEntryLimit</source>
+        </trans-unit>
+        <trans-unit d4:value="flushCharLimit:S" id="k_39">
+          <source>Fnd_Log_FlushCharLimit</source>
+        </trans-unit>
+        <trans-unit d4:value="includeSeverity:S" id="k_40">
+          <source>Fnd_Log_IncludeSeverity</source>
+        </trans-unit>
+        <trans-unit d4:value="includeMachineName:S" id="k_41">
+          <source>Fnd_Log_IncludeMachineName</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="CF8F57C234004DD1A68D0619BE85E59C" restype="x-4DK#">
+        <trans-unit d4:value="2:L" id="k_42">
+          <source>Fnd_Gen_ApplicationWide</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_43">
+          <source>Fnd_Gen_DefaultStackSize</source>
+        </trans-unit>
+        <trans-unit d4:value="600:L" id="k_44">
+          <source>Fnd_Gen_ExtrasVersion</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="k_45">
+          <source>Fnd_Gen_NextAlertOnly</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_46">
+          <source>Fnd_Gen_ProcessWide</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_47">
+          <source>Fnd_Gen_ToDialog</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="k_48">
+          <source>Fnd_Gen_ToLog</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="k_49">
+          <source>Fnd_Gen_ToLogEvent</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_50">
+          <source>Fnd_Gen_ToNotification</source>
+        </trans-unit>
+        <trans-unit d4:value="$Fnd_UI:S" id="k_51">
+          <source>Fnd_UI_WorkerName</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="64D91394FA6E4F309929B2E8ED34BF2F" restype="x-4DK#">
+        <trans-unit d4:value="-1:L" id="k_52">
+          <source>Is Window Coordinates</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="7FF33E1595B54EFF9F084FF8021B9E45" restype="x-4DK#">
+        <trans-unit d4:value="0:L" id="k_53">
+          <source>Fnd_Pref_Local</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_54">
+          <source>Fnd_Pref_Server</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_55">
+          <source>Fnd_Pref_Shared</source>
+        </trans-unit>
+        <trans-unit d4:value="$Fnd_Pref_Semaphore:S" id="k_56">
+          <source>Fnd_Pref_Semaphore</source>
+        </trans-unit>
+        <trans-unit d4:value="1800:L" id="k_57">
+          <source>Fnd_Pref_SemaphoreTimeout</source>
+        </trans-unit>
+        <trans-unit d4:value="Fnd_Pref_Shared:S" id="k_58">
+          <source>Fnd_Pref_SharedName</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="k_59">
+          <source>Fnd_Pref_FileFormat</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="88992A9D18264E1E92B9C1B935201676" restype="x-4DK#">
+        <trans-unit d4:value="23002:L" id="k_60">
+          <source>Fnd_Reg_Demo</source>
+        </trans-unit>
+        <trans-unit d4:value="23003:L" id="k_61">
+          <source>Fnd_Reg_Expired</source>
+        </trans-unit>
+        <trans-unit d4:value="23001:L" id="k_62">
+          <source>Fnd_Reg_PreDemo</source>
+        </trans-unit>
+        <trans-unit d4:value="23004:L" id="k_63">
+          <source>Fnd_Reg_Registered</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="DEDAA82BE9BC4700AFCA5360F412D76A" restype="x-4DK#">
+        <trans-unit d4:value="1:L" id="k_64">
+          <source>Fnd_Wnd_CenterOnScreen</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="k_65">
+          <source>Fnd_Wnd_CenterOnWindow</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="k_66">
+          <source>Fnd_Wnd_MacOSXSheet</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="k_67">
+          <source>Fnd_Wnd_Stacked</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="k_68">
+          <source>Fnd_Wnd_StackedOnWindow</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="k_69">
+          <source>Fnd_Wnd_Exact</source>
+        </trans-unit>
+        <trans-unit d4:value="10:L" id="k_70">
+          <source>Fnd_Wnd_OnTheRight</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="k_71">
+          <source>Fnd_Wnd_OnTheLeft</source>
+        </trans-unit>
+        <trans-unit d4:value="40:L" id="k_72">
+          <source>Fnd_Wnd_AtTheTop</source>
+        </trans-unit>
+        <trans-unit d4:value="80:L" id="k_73">
+          <source>Fnd_Wnd_AtTheBottom</source>
+        </trans-unit>
+        <trans-unit d4:value="1000:L" id="k_74">
+          <source>Fnd_Wnd_RelativeOnTheRight</source>
+        </trans-unit>
+        <trans-unit d4:value="2000:L" id="k_75">
+          <source>Fnd_Wnd_RelativeOnTheLeft</source>
+        </trans-unit>
+        <trans-unit d4:value="4000:L" id="k_76">
+          <source>Fnd_Wnd_RelativeAtTheTop</source>
+        </trans-unit>
+        <trans-unit d4:value="8000:L" id="k_77">
+          <source>Fnd_Wnd_RelativeAtTheBottom</source>
+        </trans-unit>
+        <trans-unit d4:value="$Fnd_Wnd_Semaphore:S" id="k_78">
+          <source>Fnd_Wnd_Semaphore</source>
+        </trans-unit>
+        <trans-unit d4:value="1800:L" id="k_79">
+          <source>Fnd_Wnd_SemaphoreTimeout</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="k_80">
+          <source>Fnd_Wnd_StackHOffset</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="k_81">
+          <source>Fnd_Wnd_StackVOffset</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="9D686381A8764BA5810339BD754DD805" restype="x-4DK#">
+        <trans-unit d4:value="🔒:S" id="k_82">
+          <source>Fnd_Pswd_BulletCharacter</source>
+        </trans-unit>
+        <trans-unit d4:value="pin:S" id="k_83">
+          <source>Fnd_Pswd_TypePIN</source>
+        </trans-unit>
+        <trans-unit d4:value="pronounceable:S" id="k_84">
+          <source>Fnd_Pswd_TypePronounceable</source>
+        </trans-unit>
+        <trans-unit d4:value="random:S" id="k_85">
+          <source>Fnd_Pswd_TypeRandom</source>
+        </trans-unit>
+      </group>
+      <group d4:groupName="6AE5B35DB43E4373A7BA6F080656D3DA" restype="x-4DK#">
+        <trans-unit d4:value="fo_column:S" id="k_86">
+          <source>fo_column</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_field:S" id="k_87">
+          <source>fo_field</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_type:S" id="k_88">
+          <source>fo_type</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_title:S" id="k_89">
+          <source>fo_title</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_width:S" id="k_90">
+          <source>fo_width</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_minWidth:S" id="k_91">
+          <source>fo_minWidth</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_maxWidth:S" id="k_92">
+          <source>fo_maxWidth</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_hAlign:S" id="k_93">
+          <source>fo_hAlign</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_vAlign:S" id="k_94">
+          <source>fo_vAlign</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_visible:S" id="k_95">
+          <source>fo_visible</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_style:S" id="k_96">
+          <source>fo_style</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_format:S" id="k_97">
+          <source>fo_format</source>
+        </trans-unit>
+        <trans-unit d4:value="fo_operator:S" id="k_109">
+          <source>fo_operator</source>
+        </trans-unit>
+        <trans-unit d4:value="fontName:S" id="k_98">
+          <source>Fnd_Out_FontName</source>
+        </trans-unit>
+        <trans-unit d4:value="textSize:S" id="k_99">
+          <source>Fnd_Out_TextSize</source>
+        </trans-unit>
+        <trans-unit d4:value="rowHeight:S" id="k_100">
+          <source>Fnd_Out_RowHeight</source>
+        </trans-unit>
+        <trans-unit d4:value="rowPixels:S" id="k_101">
+          <source>Fnd_Out_RowPixels</source>
+        </trans-unit>
+        <trans-unit d4:value="vAlign:S" id="k_102">
+          <source>Fnd_Out_VAlign</source>
+        </trans-unit>
+        <trans-unit d4:value="fill:S" id="k_103">
+          <source>Fnd_Out_Fill</source>
+        </trans-unit>
+        <trans-unit d4:value="altFill:S" id="k_104">
+          <source>Fnd_Out_AltFill</source>
+        </trans-unit>
+        <trans-unit d4:value="maxRelationDepth:S" id="k_105">
+          <source>Fnd_Out_RelationDepth</source>
+        </trans-unit>
+        <trans-unit d4:value="maxColumns:S" id="k_106">
+          <source>Fnd_Out_MaxColumns</source>
+        </trans-unit>
+        <trans-unit d4:value="allowCustom:S" id="k_107">
+          <source>Fnd_Out_AllowCustom</source>
+        </trans-unit>
+        <trans-unit d4:value="allowPublish:S" id="k_108">
+          <source>Fnd_Out_AllowPublish</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>

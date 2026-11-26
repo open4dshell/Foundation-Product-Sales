@@ -1,0 +1,1 @@
+<!--Fnd_Reg_RegDialogOKButton Does not require any parameters -->## Fnd\_Reg\_RegDialogOKButtonFnd\_Reg\_RegDialogOKButtonWe call this from a protected method because a public form can't call private methods.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

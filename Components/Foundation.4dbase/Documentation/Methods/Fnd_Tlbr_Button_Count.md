@@ -1,0 +1,1 @@
+<!--Fnd_Tlbr_Button_Count -> Longint$0 : Longint : ⬅️ : Count-->## Fnd\_Tlbr\_Button\_CountFnd\_Tlbr\_Button\_Count --> LongintReturns the number of buttons in the toolbarAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||$0|Longint|⬅️|Count|

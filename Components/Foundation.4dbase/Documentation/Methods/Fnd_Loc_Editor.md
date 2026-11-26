@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor ({number})inNumber : Longint : ➡️ : Used internally by this method-->## Fnd\_Loc\_EditorFnd\_Loc\_Editor ({number})Displays the Localization List Editor window in a new process.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||inNumber|Longint|➡️|Used internally by this method|

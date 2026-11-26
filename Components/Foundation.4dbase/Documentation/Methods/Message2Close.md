@@ -1,0 +1,1 @@
+<!--Message2Close Does not require any parameters -->## Message2CloseMessage2CloseAllows an older Foundation based database to use the new Fnd\_Dlg routines.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

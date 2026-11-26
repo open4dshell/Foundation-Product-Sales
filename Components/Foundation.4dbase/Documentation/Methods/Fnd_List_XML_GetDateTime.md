@@ -1,0 +1,1 @@
+<!--Fnd_List_XML_GetDateTime -> TextResult : Text : ⬅️ : The date-time value-->## Fnd\_List\_XML\_GetDateTimeFnd\_List\_XML\_GetDateTime --> TextReturns the date-time value stored in the Fnd\_List.xml file.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Text|⬅️|The date-time value|

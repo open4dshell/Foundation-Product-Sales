@@ -1,0 +1,1 @@
+<!--Fnd_Sort_OrderByEditor Does not require any parameters -->## Fnd\_Sort\_OrderByEditorFnd\_Sort\_OrderByEditorDisplays the simple Sort dialog.  If the Macintosh Option key or Windows Alt key is down, 4D's Order By editor is displayed instead.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

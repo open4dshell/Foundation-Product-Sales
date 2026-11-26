@@ -69,7 +69,7 @@
 						"onSelectionChange",
 						"onHeaderClick"
 					],
-					"alternateFill": "#F1F6FE",
+					"alternateFill": "automaticAlternate",
 					"selectionMode": "single",
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",

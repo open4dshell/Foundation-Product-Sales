@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_FixButtonTexts Does not require any parameters -->## Fnd\_Dlg\_FixButtonTextsFnd\_Dlg\_FixButtonTextsConvert "*" in the button texts to local strings.Do this just before displaying the dialog, since they get cleared after that.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

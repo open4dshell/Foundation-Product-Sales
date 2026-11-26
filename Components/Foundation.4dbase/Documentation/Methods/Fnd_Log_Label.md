@@ -1,0 +1,1 @@
+<!--Fnd_Log_Label Does not require any parameters -->## Fnd\_Log\_LabelFnd\_Log\_Label // Return the current process log label; empty means an unnamed/default target. Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

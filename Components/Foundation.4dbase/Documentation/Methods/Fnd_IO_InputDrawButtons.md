@@ -1,0 +1,1 @@
+<!--Fnd_IO_InputDrawButtons Does not require any parameters -->## Fnd\_IO\_InputDrawButtonsFnd\_IO\_InputDrawButtonsCalled from Fnd\_IO\_InputFormMethod when the window is first open to draw the buttons from the inherited form.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

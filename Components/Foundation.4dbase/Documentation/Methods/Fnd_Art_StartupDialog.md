@@ -1,0 +1,1 @@
+<!--Fnd_Art_StartupDialog Does not require any parameters -->## Fnd\_Art\_StartupDialogFnd\_Art\_StartupDialogDisplays the startup window in a new process.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

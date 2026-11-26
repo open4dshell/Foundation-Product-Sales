@@ -18,7 +18,7 @@ Case of
 			//Get pointer("Fnd_Tlbr_PictureButton"+String($buttonNumber_i)+"_i")
 		End for 
 		
-		Fnd_Tlbr_SetHostVars(->$pictures_aptr; ->$buttons_aptr; ->Fnd_Tlbr_Info_t)
+		Fnd_Tlbr_SetHostVars(->$pictures_aptr; ->$buttons_aptr)
 		
 		C_LONGINT($Button_i)
 		C_TEXT($Columns_t; $Rows_t; $PictureName_t; $Flags_t; $displayFormat_t; $Name_t)

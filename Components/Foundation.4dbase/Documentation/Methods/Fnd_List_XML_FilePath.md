@@ -1,0 +1,1 @@
+<!--Fnd_List_XML_FilePath -> TextResult : Text : ⬅️ : The file path-->## Fnd\_List\_XML\_FilePathFnd\_List\_XML\_FilePath --> TextReturns the path to the Fnd\_List.xml file.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Text|⬅️|The file path|

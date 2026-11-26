@@ -1,0 +1,1 @@
+<!--Fnd_Menu_About Does not require any parameters -->## Fnd\_Menu\_AboutFnd\_Menu\_AboutCalled from the menu when the About box command is selected.Installed by the Fnd\_Shell\_OnStartup method.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,37 @@
+Signing and notarising your own build of Foundation (macOS)
+
+A compiled Foundation.4dbase carries native code in Libraries/lib4d-arm64.dylib.
+For it to load on another Mac without a Gatekeeper warning, sign it with your own
+Developer ID and have Apple notarise it. Replace every <...> below with your own
+details; nothing here is specific to Foundation's maintainers.
+
+You need: an Apple Developer account, a "Developer ID Application" certificate in
+your login keychain, and an app-specific password for your Apple ID
+(appleid.apple.com > Sign-In and Security > App-Specific Passwords).
+
+1. Store your notarisation credentials in the keychain, once:
+
+   xcrun notarytool store-credentials "<profile-name>" --apple-id "<your Apple ID>" --team-id "<TEAMID>" --password "<app-specific password>"
+
+2. Go to the built component's Libraries folder:
+
+   cd "<path to your build>/Foundation.4dbase/Libraries"
+
+3. Replace any existing signature with your own:
+
+   codesign --remove-signature lib4d-arm64.dylib
+   codesign --verbose --deep --timestamp --force --options runtime --sign "Developer ID Application: <Your Name or Company> (<TEAMID>)" lib4d-arm64.dylib
+
+   "security find-identity -v -p codesigning" lists the exact identity name.
+
+4. Wrap it in a disk image and submit it:
+
+   hdiutil create -format UDBZ -srcfolder lib4d-arm64.dylib lib4d-arm64.dmg
+   xcrun notarytool submit lib4d-arm64.dmg --keychain-profile "<profile-name>" --wait
+
+5. Staple the ticket and check the result:
+
+   xcrun stapler staple lib4d-arm64.dmg
+   spctl --assess --type open --context context:primary-signature -v lib4d-arm64.dmg
+
+Apple retired "altool" for notarisation in November 2023; "notarytool" replaces it.

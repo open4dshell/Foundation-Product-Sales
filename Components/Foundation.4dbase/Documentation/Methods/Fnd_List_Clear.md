@@ -1,0 +1,1 @@
+<!--Fnd_List_Clear Does not require any parameters -->## Fnd\_List\_ClearFnd\_List\_ClearClears the Command List elements.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

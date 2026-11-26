@@ -1,0 +1,1 @@
+<!--Fnd_Menu_NewRecord Does not require any parameters -->## Fnd\_Menu\_NewRecordFnd\_Menu\_NewRecordCreates and displays a new record for the current table.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

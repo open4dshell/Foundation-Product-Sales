@@ -1,0 +1,1 @@
+<!--Fnd_Wnd_ToolbarHeight -> longint$0 : longint : ⬅️ : The toolbar height-->## Fnd\_Wnd\_ToolbarHeightFnd\_Wnd\_ToolbarHeight --> longintReturns the toolbar height (if it is currently being displayed)Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||$0|longint|⬅️|The toolbar height|

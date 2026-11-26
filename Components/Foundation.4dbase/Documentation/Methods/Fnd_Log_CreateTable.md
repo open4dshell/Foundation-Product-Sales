@@ -1,0 +1,1 @@
+<!--Fnd_Log_CreateTable Does not require any parameters -->## Fnd\_Log\_CreateTableFnd\_Log\_CreateTable // Explicit interpreted-host-only schema creation; never called by logging. Returns success/created/restartRequired/message. Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

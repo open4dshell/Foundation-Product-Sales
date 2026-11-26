@@ -1,0 +1,1 @@
+<!--Fnd_List_ListToRecord (list name)listName : Text : ➡️ : The name of the list to save-->## Fnd\_List\_ListToRecordFnd\_List\_ListToRecord (list name)Saves the list as a 4D list and as a record.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||listName|Text|➡️|The name of the list to save|

@@ -1,0 +1,1 @@
+<!--Fnd_Rec_ShowSubset Does not require any parameters -->## Fnd\_Rec\_ShowSubsetFnd\_Rec\_ShowSubsetReduces the current selection to just the highlighted records.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

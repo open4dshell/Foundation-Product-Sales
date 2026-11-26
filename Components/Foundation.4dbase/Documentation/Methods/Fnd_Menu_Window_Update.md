@@ -1,0 +1,1 @@
+<!--Fnd_Menu_Window_Update Does not require any parameters -->## Fnd\_Menu\_Window\_UpdateFnd\_Menu\_Window\_UpdateRebuilds the Window menu from the Fnd\_Wnd window registry: one item for each window listed in it, then Close All Windows.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_SqNo_EditGroup (record ID)id : Longint : ➡️ : A sequence number ID-->## Fnd\_SqNo\_EditGroupFnd\_SqNo\_EditGroup (record ID)Displays a dialog for editing the specified sequence number group.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||id|Longint|➡️|A sequence number ID|

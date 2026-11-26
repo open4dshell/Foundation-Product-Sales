@@ -1,0 +1,1 @@
+<!--Fnd_Prnt_QuickReportEditorResult :  : ⬅️ : None-->## Fnd\_Prnt\_QuickReportEditorFnd\_Prnt\_QuickReportEditorDisplays 4D's built-in Quick Report EditorAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result||⬅️|None|

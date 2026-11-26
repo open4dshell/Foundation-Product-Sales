@@ -1,0 +1,1 @@
+<!--Fnd_List_EditOne2 (list name)listName : Text : ➡️ : The list name-->## Fnd\_List\_EditOne2Fnd\_List\_EditOne2 (list name)Called as a new process by Fnd\_List\_EditOne to edit a list.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||listName|Text|➡️|The list name|

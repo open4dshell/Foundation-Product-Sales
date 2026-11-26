@@ -1,0 +1,1 @@
+<!--Fnd_Menu_SortOrderEditor Does not require any parameters -->## Fnd\_Menu\_SortOrderEditorFnd\_Menu\_SortOrderEditorDisplays 4D's Order By editor.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

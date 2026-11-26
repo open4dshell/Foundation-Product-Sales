@@ -1,0 +1,1 @@
+<!--Fnd_Rec_Modify Does not require any parameters -->## Fnd\_Rec\_ModifyFnd\_Rec\_ModifyDisplays a dialog allowing the user to modify all of the records in the current selection.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

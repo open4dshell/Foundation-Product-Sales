@@ -1,0 +1,1 @@
+<!--Fnd_Nav_UpdateColors Does not require any parameters -->## Fnd\_Nav\_UpdateColorsFnd\_Nav\_UpdateColorsUpdates the palette form's object colors from Storage.Fnd.Nav.buttons.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

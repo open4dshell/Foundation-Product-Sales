@@ -1,0 +1,1 @@
+<!--Fnd_Menu_OpenTable Does not require any parameters -->## Fnd\_Menu\_OpenTableFnd\_Menu\_OpenTableCalled when the user selects the Open Table command from the File menu.This is just a temporary placeholder.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

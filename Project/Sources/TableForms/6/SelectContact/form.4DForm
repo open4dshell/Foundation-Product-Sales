@@ -67,6 +67,7 @@
 					"scrollbarHorizontal": "automatic",
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
+					"alternateFill": "automaticAlternate",
 					"events": [
 						"onClick",
 						"onDataChange",
@@ -82,7 +83,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"wordwrap": "normal",
-							"alternateFill": "#F1F6FE",
 							"rowHeightAuto": true,
 							"fontFamily": "Lucida Grande",
 							"fontSize": 12,
@@ -106,7 +106,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"wordwrap": "normal",
-							"alternateFill": "#F1F6FE",
 							"rowHeightAuto": true,
 							"fontFamily": "Lucida Grande",
 							"fontSize": 12,

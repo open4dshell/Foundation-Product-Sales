@@ -1,0 +1,1 @@
+<!--Fnd_Log_Config Does not require any parameters -->## Fnd\_Log\_ConfigFnd\_Log\_Config // Get/set run defaults. Existing named logs retain their declaration settings. Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

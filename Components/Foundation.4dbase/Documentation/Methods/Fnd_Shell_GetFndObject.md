@@ -1,0 +1,1 @@
+<!--Fnd_Shell_GetFndObject -> ReturnTypeResult : Object : ⬅️ : The Fnd objects-->## Fnd\_Shell\_GetFndObjectFnd\_Shell\_GetFndObject --> ReturnTypeReturns a copy of the Fnd objectAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Object|⬅️|The Fnd objects|

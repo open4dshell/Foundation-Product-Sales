@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_MessageUpdate (number)current : Longint : ➡️ : The next number in the sequence.-->## Fnd\_Dlg\_MessageUpdateFnd\_Dlg\_MessageUpdate (number)Updates the message dialog's progress indicator.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||current|Longint|➡️|The next number in the sequence.|

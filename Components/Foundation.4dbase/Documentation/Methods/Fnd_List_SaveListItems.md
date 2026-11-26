@@ -1,0 +1,1 @@
+<!--Fnd_List_SaveListItems Does not require any parameters -->## Fnd\_List\_SaveListItemsFnd\_List\_SaveListItemsAssumes the proper [Fnd\_List] record is loaded.Called from the Fnd\_List\_Editor and ListsCreateSystemLists2 methods.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

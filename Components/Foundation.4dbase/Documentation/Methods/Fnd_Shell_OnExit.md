@@ -1,0 +1,1 @@
+<!--Fnd_Shell_OnExit Does not require any parameters -->## Fnd\_Shell\_OnExitFnd\_Shell\_OnExitCalled from the shell's On Exit database method.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

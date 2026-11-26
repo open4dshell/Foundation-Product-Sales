@@ -1,0 +1,1 @@
+<!--Fnd_Shell_Quitter Does not require any parameters -->## Fnd\_Shell\_QuitterFnd\_Shell\_QuitterThis process tries to tell all of the other processes to quit.Called as a new process from Fnd\_Gen\_QuitNow.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_Bttn_SetVariables Does not require any parameters -->## Fnd\_Bttn\_SetVariablesFnd\_Bttn\_SetVariablesUpdates the toolbar variables depending on the current platform, size, and style settings.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

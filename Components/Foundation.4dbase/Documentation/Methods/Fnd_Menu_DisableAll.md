@@ -1,0 +1,1 @@
+<!--Fnd_Menu_DisableAll Does not require any parameters -->## Fnd\_Menu\_DisableAllFnd\_Menu\_DisableAllDisables all of the menu items.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

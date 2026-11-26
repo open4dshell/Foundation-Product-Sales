@@ -1,0 +1,1 @@
+<!--Fnd_Menu_MenuBar ({"*"})inForce : Text : ➡️ : Pass "*" to force a full update (optional)-->## Fnd\_Menu\_MenuBarFnd\_Menu\_MenuBar ({"*"})Updates the menu bar.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||inForce|Text|➡️|Pass "*" to force a full update (optional)|

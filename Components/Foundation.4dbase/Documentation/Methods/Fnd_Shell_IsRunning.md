@@ -1,0 +1,1 @@
+<!--Fnd_Shell_IsRunning -> BooleanResult : Boolean : ⬅️ : Is the shell running?-->## Fnd\_Shell\_IsRunningFnd\_Shell\_IsRunning --> BooleanReturns True if the shell is running.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Boolean|⬅️|Is the shell running?|

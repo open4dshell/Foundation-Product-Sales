@@ -1,0 +1,1 @@
+<!--Fnd_Art_StartupDialogClose Does not require any parameters -->## Fnd\_Art\_StartupDialogCloseFnd\_Art\_StartupDialogCloseCloses the startup message.  Safe to call even if no startup message was displayed.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

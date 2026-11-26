@@ -1,0 +1,1 @@
+<!--Fnd_List_UpdateStructureLists Does not require any parameters -->## Fnd\_List\_UpdateStructureListsFnd\_List\_UpdateStructureListsCopies the Foundation maintained lists to the 4D structure file.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

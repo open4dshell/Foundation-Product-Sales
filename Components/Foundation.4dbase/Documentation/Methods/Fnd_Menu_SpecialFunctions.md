@@ -1,0 +1,1 @@
+<!--Fnd_Menu_SpecialFunctions Does not require any parameters -->## Fnd\_Menu\_SpecialFunctionsFnd\_Menu\_SpecialFunctionsCalled from the menu.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

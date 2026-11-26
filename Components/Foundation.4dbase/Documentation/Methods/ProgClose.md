@@ -1,0 +1,1 @@
+<!--ProgClose Does not require any parameters -->## ProgCloseProgCloseAllows an older Foundation based database to use the new Fnd\_Dlg routines.Part of the Foundation Compatibility component.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

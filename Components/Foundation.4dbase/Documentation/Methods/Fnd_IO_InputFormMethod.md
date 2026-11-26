@@ -1,0 +1,1 @@
+<!--Fnd_IO_InputFormMethod Does not require any parameters -->## Fnd\_IO\_InputFormMethodFnd\_IO\_InputFormMethodStandard form method for input forms.Handles the window title and close box on an input form.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

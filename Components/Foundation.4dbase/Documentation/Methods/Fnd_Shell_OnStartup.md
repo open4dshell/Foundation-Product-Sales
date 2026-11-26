@@ -1,0 +1,1 @@
+<!--Fnd_Shell_OnStartup Does not require any parameters -->## Fnd\_Shell\_OnStartupFnd\_Shell\_OnStartupThe startup routine for the Foundation Shell.  Called from the On Startup database method.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

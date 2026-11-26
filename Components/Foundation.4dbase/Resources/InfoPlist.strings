@@ -1,0 +1,6 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Foundation";
+CFBundleShortVersionString = "6.0.0-rc.1";
+CFBundleGetInfoString = "Foundation 6.0.0-rc.1 (4D 20 LTS), 2026-11-26";
+NSHumanReadableCopyright = "Copyright © 1993–2008 Dave Batton, 2008–2026 Walt Nelson, 2026 Wayne Stewart";

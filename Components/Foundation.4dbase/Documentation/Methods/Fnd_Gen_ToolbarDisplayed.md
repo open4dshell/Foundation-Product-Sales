@@ -1,0 +1,1 @@
+<!--Fnd_Gen_ToolbarDisplayed -> BooleanResult : Boolean : ⬅️ : Description-->## Fnd\_Gen\_ToolbarDisplayedFnd\_Gen\_ToolbarDisplayed --> BooleanReturns true if the design toolbar is visibleAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Boolean|⬅️|Description|

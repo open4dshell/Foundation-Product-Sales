@@ -1,0 +1,1 @@
+<!--Fnd_Wnd_CancelCloseAll Does not require any parameters -->## Fnd\_Wnd\_CancelCloseAllFnd\_Wnd\_CancelCloseAllCall this to end Foundation's attempts to close all windows.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

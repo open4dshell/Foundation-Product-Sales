@@ -52,7 +52,7 @@
 					"dataSource": "Form:C1466.listData",
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
-					"alternateFill": "#F1F6FE",
+					"alternateFill": "automaticAlternate",
 					"currentItemSource": "Form:C1466.currentItem",
 					"currentItemPositionSource": "Form:C1466.currentItemPosition",
 					"selectedItemsSource": "Form:C1466.selectedItems",

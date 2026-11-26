@@ -1,0 +1,1 @@
+<!--Fnd_Menu_EnableDisableItems Does not require any parameters -->## Fnd\_Menu\_EnableDisableItemsFnd\_Menu\_EnableDisableItemsHere's where we enable or disable menu items based on the contents and state of the frontmost window.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

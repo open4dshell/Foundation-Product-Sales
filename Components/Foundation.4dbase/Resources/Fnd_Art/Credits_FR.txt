@@ -1,0 +1,66 @@
+<span>
+<span style="font-weight:bold">Foundation<br/>
+<span>https://foundation.open4dshell.com</span><br/>
+<br/>
+Créé par </span><br/>
+Dave Batton (1993–2008)<br/>
+<br/>
+<span style="font-weight:bold">Développé par </span><br/>
+Walt Nelson (2008–2026)<br/>
+<br/>
+<span style="font-weight:bold"><span>Maintenu en <br/>
+open source par </span><br/>
+</span>Wayne Stewart (2026–)<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Contributeurs</span><br/>
+</span></span>Arnaud de Montard<br/>
+Barclay Barry<br/>
+Cannon Smith<br/>
+Dani Beaubien<br/>
+Dave Batton<br/>
+Dave Nasralla<br/>
+David Dancy<br/>
+David Robbins<br/>
+Doug Hall<br/>
+Ed Fraser<br/>
+Ed Heckman<br/>
+Gary Boudreaux<br/>
+Gerald Balzer<br/>
+Graham Langley<br/>
+Guy Algot<br/>
+Jack Delay<br/>
+Jean Pierre Ribreau<br/>
+Jérôme Pupier<br/>
+John Craig<br/>
+Justin Leavens<br/>
+Ken Spence<br/>
+Marco Bernasconi<br/>
+Mark Mitchenall<br/>
+Mark Schaake<br/>
+Matthias Hertel<br/>
+Mike Erickson<br/>
+Owen Watson<br/>
+Peter Bozek<br/>
+Rob Laveaux<br/>
+Tom Dillon<br/>
+Vincent de Lachaux<br/>
+Vincent Tournier<br/>
+Walt Nelson<br/>
+Wayne Stewart<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Modules tiers</span><br/>
+</span></span>Modules Constants et Object de Cannon Smith,<br/>
+Synergy Farm Solutions<br/>
+Composant Toolbar de Mark Mitchenall,<br/>
+utilisé avec sa permission<br/>
+Composant Date Entry de Tom Dillon<br/>
+Module Dictionary de Rob Laveaux<br/>
+Comparaison de textes tirée de CodeAnalysis<br/>
+de Dani Beaubien, d'après Matthias Hertel<br/>
+Développé avec DevSync et DevQuickOpen,<br/>
+également de Cannon Smith<br/>
+<br/>
+<span><span style="font-weight:bold"><span>Contributions spéciales</span><br/>
+</span>username</span><br/>
+<br/>
+Publié sous licence MIT</span>

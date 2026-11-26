@@ -1,0 +1,1 @@
+<!--Fnd_Bttn_MakeMenuIndicatorPic -> Picture Does not require any parameters -->## Fnd\_Bttn\_MakeMenuIndicatorPicFnd\_Bttn\_MakeMenuIndicatorPic --> PictureCreates a picture of the specified label.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

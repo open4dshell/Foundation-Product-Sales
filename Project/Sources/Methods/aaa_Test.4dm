@@ -8,7 +8,7 @@
 
 var $ProcessID_i; $StackSize_i; $WindowID_i; $i_i; $last_i : Integer
 var $w_i; $h_i : Integer
-var $Form_t; $DesiredProcessName_t; $t : Text
+var $Form_t; $DesiredProcessName_t; $t; $text_t; $mode_t : Text
 
 // ----------------------------------------------------
 
@@ -21,13 +21,27 @@ Case of
 	: (Current process name=$DesiredProcessName_t)
 		RELOAD PROJECT
 		DELAY PROCESS(Current process; 30)
+
+		// Hook-update checklist (AgentNotes/Active/Hook-Update-Checklist.md)
+		// "asIs" = item 1 (FPS's own hooks); "replace", "merge", "conflict" = items 2-4 (item 5 = merge, then Cancel)
+		$mode_t:="replace"
+		
+		If ($mode_t#"asIs")
+			$text_t:=JSON Parse(File("/Users/waynestewart/4D/f6/Resources/Fnd_Shell_Installer/HookTemplates.json"; fk posix path).getText("UTF-8")).Fnd_Hook_IO_DisplayTable[1].text
+			$text_t:=Replace string($text_t; "{{date}}"; "Nov 10, 2026")
+			
+			Case of 
+				: ($mode_t="merge")
+					$text_t:=$text_t+"// My own line, kept by the merge"+Char(Carriage return)
+					
+				: ($mode_t="conflict")
+					$text_t:=Replace string($text_t; "//\t\tFnd_Out_Active(True)"; "//\t\tFnd_Out_Active(False)")
+			End case 
+			
+			METHOD SET CODE("Fnd_Hook_IO_DisplayTable"; $text_t)
+		End if 
 		
 		Fnd_Shell_Installer
-		
-		//SET TEXT TO PASTEBOARD($t)
-		//ALERT($t)
-		
-		
 		
 	Else 
 		// This version allows for any number of processes

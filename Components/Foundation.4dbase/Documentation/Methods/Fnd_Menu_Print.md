@@ -1,0 +1,1 @@
+<!--Fnd_Menu_Print Does not require any parameters -->## Fnd\_Menu\_PrintFnd\_Menu\_PrintCalled when Print is selected from the File menu.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_Reg_BuyNowButton Does not require any parameters -->## Fnd\_Reg\_BuyNowButtonFnd\_Reg\_BuyNowButtonGets called from the Buy Now buttons.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

@@ -1,0 +1,1 @@
+<!--Fnd_Menu_NavPalette Does not require any parameters -->## Fnd\_Menu\_NavPaletteFnd\_Menu\_NavPaletteCalled from the menu bar.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

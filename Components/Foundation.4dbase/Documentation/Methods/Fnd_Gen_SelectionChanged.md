@@ -1,0 +1,1 @@
+<!--Fnd_Gen_SelectionChanged Does not require any parameters -->## Fnd\_Gen\_SelectionChangedFnd\_Gen\_SelectionChangedCall this whenever the current selection of records displayed in the output list changes.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

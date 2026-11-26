@@ -1,0 +1,1 @@
+<!--Fnd_Shell_Show4DSplashScreen Does not require any parameters -->## Fnd\_Shell\_Show4DSplashScreenFnd\_Shell\_Show4DSplashScreenAllows the developer to display the 4D splash screen so the database can be used in the User environment.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

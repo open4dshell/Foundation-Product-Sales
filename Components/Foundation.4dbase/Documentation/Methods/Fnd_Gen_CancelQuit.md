@@ -1,0 +1,1 @@
+<!--Fnd_Gen_CancelQuit Does not require any parameters -->## Fnd\_Gen\_CancelQuitFnd\_Gen\_CancelQuitCall this to end Foundation's attempts to quit.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

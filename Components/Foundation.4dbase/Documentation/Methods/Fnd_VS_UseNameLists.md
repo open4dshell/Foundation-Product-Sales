@@ -1,0 +1,1 @@
+<!--Fnd_VS_UseNameLists Does not require any parameters -->## Fnd\_VS\_UseNameListsFnd\_VS\_UseNameListsUses the virtual structure 4D lists.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

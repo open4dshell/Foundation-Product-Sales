@@ -1,0 +1,1 @@
+<!--Fnd_Menu_Sort Does not require any parameters -->## Fnd\_Menu\_SortFnd\_Menu\_SortSorts the records for the current table.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

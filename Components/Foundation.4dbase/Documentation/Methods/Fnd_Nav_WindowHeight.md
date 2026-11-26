@@ -1,0 +1,1 @@
+<!--Fnd_Nav_WindowHeight -> NumberResult : Longint : ⬅️ : The height to use-->## Fnd\_Nav\_WindowHeightFnd\_Nav\_WindowHeight --> NumberReturns the height to use for the navigation palette.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Longint|⬅️|The height to use|

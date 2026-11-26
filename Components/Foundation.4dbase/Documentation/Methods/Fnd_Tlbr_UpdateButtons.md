@@ -1,0 +1,1 @@
+<!--Fnd_Tlbr_UpdateButtons Does not require any parameters -->## Fnd\_Tlbr\_UpdateButtonsFnd\_Tlbr\_UpdateButtonsRedraws the toolbar, but only if it needs it.  If no code has been called which effects the toolbar, then there is no reason to redraw it.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

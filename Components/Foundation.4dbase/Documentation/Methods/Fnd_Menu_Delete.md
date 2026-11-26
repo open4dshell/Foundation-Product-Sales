@@ -1,0 +1,1 @@
+<!--Fnd_Menu_Delete Does not require any parameters -->## Fnd\_Menu\_DeleteFnd\_Menu\_DeleteDeletes the highlighted records in the output list.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

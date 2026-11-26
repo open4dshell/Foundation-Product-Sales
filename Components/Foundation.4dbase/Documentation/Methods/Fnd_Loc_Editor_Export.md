@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor_Export Does not require any parameters -->## Fnd\_Loc\_Editor\_ExportFnd\_Loc\_Editor\_ExportExports a text file and saves it as a 4D list.Designed to be called from the Localization Editor dialog.  Don't call directly.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

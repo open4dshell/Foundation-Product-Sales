@@ -12,8 +12,6 @@
 *.4DD
 *.4DIndx
 
-# Ignore the Foundation component
-**/Foundation.4dbase/*
 
 # Thomas Maul Additions
 ######################

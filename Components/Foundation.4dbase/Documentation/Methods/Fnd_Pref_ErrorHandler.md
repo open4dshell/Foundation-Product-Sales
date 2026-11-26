@@ -1,0 +1,1 @@
+<!--Fnd_Pref_ErrorHandler Does not require any parameters -->## Fnd\_Pref\_ErrorHandlerFnd\_Pref\_ErrorHandlerInstalled as an error handler by our preferences loading routines. Usually called because of an XML parsing error.  Displays an alert to the user.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

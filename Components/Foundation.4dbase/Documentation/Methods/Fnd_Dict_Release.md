@@ -1,0 +1,1 @@
+<!--Fnd_Dict_Release (dict ID)dictionary : Longint : ➡️ : Dictionary ID-->## Fnd\_Dict\_ReleaseFnd\_Dict\_Release (dict ID)Decrements the retain count of a dictionary and deletes it when the retain count reaches 0.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||dictionary|Longint|➡️|Dictionary ID|

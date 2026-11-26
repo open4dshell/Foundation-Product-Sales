@@ -1,0 +1,1 @@
+<!--Fnd_Shell_OpenTableDialog Does not require any parameters -->## Fnd\_Shell\_OpenTableDialogFnd\_Shell\_OpenTableDialogDisplays a dialog with the names of all visible tables.  If the user selects one it's displayed in a new window.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

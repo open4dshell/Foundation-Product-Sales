@@ -1,0 +1,55 @@
+/* Side-by-side diff and merge views (Fnd_Gen_DiffHtml, Fnd_Gen_DiffMergeHtml).
+   Neutral colours with alpha, so they read on a light or a dark page. */
+
+table.fnd-diff {
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+	font: 12px/1.45 ui-monospace, Menlo, Consolas, monospace;
+	color: inherit;
+}
+
+table.fnd-diff col.fnd-diff-cn { width: 3.2em; }
+
+table.fnd-diff th {
+	text-align: left;
+	font-weight: 600;
+	padding: 3px 6px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+table.fnd-diff td {
+	padding: 0 6px;
+	vertical-align: top;
+}
+
+table.fnd-diff td.fnd-diff-c {
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+table.fnd-diff td.fnd-diff-n {
+	text-align: right;
+	opacity: 0.55;
+	user-select: none;
+	border-right: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+table.fnd-diff .fnd-diff-div { border-left: 2px solid rgba(128, 128, 128, 0.5); }
+
+table.fnd-diff td.fnd-diff-del { background: rgba(220, 50, 47, 0.22); }
+table.fnd-diff td.fnd-diff-add { background: rgba(40, 167, 69, 0.22); }
+table.fnd-diff td.fnd-diff-ours { background: rgba(38, 139, 210, 0.22); }
+table.fnd-diff td.fnd-diff-fill { background: rgba(128, 128, 128, 0.12); }
+
+table.fnd-diff tr.fnd-diff-chead td {
+	font-weight: 600;
+	padding: 4px 6px;
+	background: rgba(220, 50, 47, 0.3);
+}
+
+table.fnd-diff tr.fnd-diff-clabel td {
+	font-style: italic;
+	opacity: 0.75;
+	padding-top: 3px;
+}

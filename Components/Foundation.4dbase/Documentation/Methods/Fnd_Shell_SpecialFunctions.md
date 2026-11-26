@@ -1,0 +1,1 @@
+<!--Fnd_Shell_SpecialFunctions Does not require any parameters -->## Fnd\_Shell\_SpecialFunctionsFnd\_Shell\_SpecialFunctionsDisplays Foundation's Special Functions dialog.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

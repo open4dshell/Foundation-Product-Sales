@@ -1,0 +1,1 @@
+<!--Fnd_Loc_Editor_Import Does not require any parameters -->## Fnd\_Loc\_Editor\_ImportFnd\_Loc\_Editor\_ImportImports Foundation localization lists.Designed to be called from the Localization Editor dialog.  Don't call directly.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

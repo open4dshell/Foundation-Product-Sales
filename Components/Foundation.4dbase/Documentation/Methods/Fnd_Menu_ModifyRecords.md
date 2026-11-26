@@ -1,0 +1,1 @@
+<!--Fnd_Menu_ModifyRecords Does not require any parameters -->## Fnd\_Menu\_ModifyRecordsFnd\_Menu\_ModifyRecordsCalled from the Modify Records item in the Edit menu.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

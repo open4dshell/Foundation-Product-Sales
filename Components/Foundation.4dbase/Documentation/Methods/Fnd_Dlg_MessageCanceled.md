@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_MessageCanceledResult : Boolean : ⬅️ : True if the user clicked Cancel-->## Fnd\_Dlg\_MessageCanceledFnd\_Dlg\_MessageCanceledReturns True if the user clicked the Cancel button.Attributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result|Boolean|⬅️|True if the user clicked Cancel|

@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_MessageClose Does not require any parameters -->## Fnd\_Dlg\_MessageCloseFnd\_Dlg\_MessageCloseCloses the progress indicator window.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

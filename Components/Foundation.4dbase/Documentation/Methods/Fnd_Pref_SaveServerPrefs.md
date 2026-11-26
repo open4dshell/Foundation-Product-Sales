@@ -1,0 +1,1 @@
+<!--Fnd_Pref_SaveServerPrefs Does not require any parameters -->## Fnd\_Pref\_SaveServerPrefsFnd\_Pref\_SaveServerPrefsSaves the user's server preferences to the data file.Called from Fnd\_Pref\_SavePrefs, which handles the semaphore.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

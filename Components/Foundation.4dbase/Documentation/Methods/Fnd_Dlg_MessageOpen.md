@@ -1,0 +1,1 @@
+<!--Fnd_Dlg_MessageOpen Does not require any parameters -->## Fnd\_Dlg\_MessageOpenFnd\_Dlg\_MessageOpenOpens the message window.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

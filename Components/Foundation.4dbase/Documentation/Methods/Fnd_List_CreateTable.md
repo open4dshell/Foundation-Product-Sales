@@ -1,0 +1,1 @@
+<!--Fnd_List_CreateTableResult :  : ⬅️ :    Nothing-->## Fnd\_List\_CreateTableFnd\_List\_CreateTableGlobal and IP variables accessed:Method Type:    PrivateAttributes: Shared, Invisible, Preemptive indifferent| Parameter | Type |  | Description || --- | --- | --- | --- ||Result||⬅️|   Nothing|

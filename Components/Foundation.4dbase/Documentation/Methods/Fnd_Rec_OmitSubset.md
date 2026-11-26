@@ -1,0 +1,1 @@
+<!--Fnd_Rec_OmitSubset Does not require any parameters -->## Fnd\_Rec\_OmitSubsetFnd\_Rec\_OmitSubsetOmits the highlighted records from the current selection.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |

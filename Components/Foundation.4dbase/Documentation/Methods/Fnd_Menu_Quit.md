@@ -1,0 +1,1 @@
+<!--Fnd_Menu_Quit Does not require any parameters -->## Fnd\_Menu\_QuitFnd\_Menu\_QuitCalled from the menu bar when the user selects Quit from the File menu.Attributes: Shared, Invisible, Preemptive indifferent| Parameters || --- || Does not require any parameters |
