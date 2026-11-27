@@ -52,6 +52,8 @@ Case of
 			fo_style; Italic; \
 			fo_title; "Contact Reversed"))
 		
+		// Fnd_IO_AddMultipleRecords(True)  // Add new records until Cancel is clicked.
+		
 	: (Fnd_Gen_CurrentTable=(->[Products]))
 		Fnd_Out_AllowCustomColumns(True)
 		Fnd_IO_ToolbarIconGroup("Card")

@@ -81,19 +81,16 @@ Case of
 		
 		
 		
-	: (Form event code=On Validate)
-		<>Contacts_AddRecordNumber_i:=Record number([Contacts])  // The [Invoices].Input form will check this.
-		
 End case 
 
 
 // Disable the Email button if there is no email address.
 
-If ([Contacts]EmailAddress="")
-	DISABLE BUTTON(->Contacts_EmailButton_i)
-Else 
-	ENABLE BUTTON(->Contacts_EmailButton_i)
-End if 
+//If ([Contacts]EmailAddress="")
+//DISABLE BUTTON(->Contacts_EmailButton_i)
+//Else 
+//ENABLE BUTTON(->Contacts_EmailButton_i)
+//End if 
 
 // Disable the Web button if there is no email address.
 

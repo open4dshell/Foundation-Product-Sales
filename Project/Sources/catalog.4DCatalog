@@ -12,12 +12,7 @@
 		<field name="message" uuid="DC0B6455E855074284CA47EABAF2BC19" type="10" limiting_length="255" id="7"/>
 		<field name="renderedLine" uuid="C238AB519F6765408BD671B0EC6D001D" type="10" id="8"/>
 		<primary_key field_name="ID" field_uuid="A2A2AAD840C135429807FE1BF18D458B"/>
-		<table_extra visible="false">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="40" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra visible="false"/>
 	</table>
 	<table name="Fnd_List" uuid="E54A199E92BE496E951B9ADF134F75F0" id="2" leave_tag_on_delete="true">
 		<field name="ID" uuid="7110951D12AD4659B094C21CB3EF56AE" type="4" unique="true" never_null="true" id="1">
@@ -28,12 +23,7 @@
 		</field>
 		<field name="List_Blob" uuid="8BFBCA06E7A14A77ACA38D0A0B01961D" type="18" never_null="true" id="3"/>
 		<primary_key field_name="ID" field_uuid="7110951D12AD4659B094C21CB3EF56AE"/>
-		<table_extra input_form="" output_form="" visible="false">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="240" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra input_form="" output_form="" visible="false"/>
 	</table>
 	<table name="Fnd_SqNo" uuid="1B2E3E67170E4F4AAE9C81C7D17C658A" id="3" leave_tag_on_delete="true">
 		<field name="ID" uuid="E51E5CA208EF439B899AF57803884505" type="4" unique="true" never_null="true" id="1">
@@ -46,12 +36,7 @@
 		<field name="Recycle_Bin" uuid="0D4D954774C440E0B9D52A7A255726AB" type="18" never_null="true" id="4"/>
 		<field name="Designer_Only" uuid="9DE2ED3958C542B5B249E6C767062C0B" type="1" never_null="true" id="5"/>
 		<primary_key field_name="ID" field_uuid="E51E5CA208EF439B899AF57803884505"/>
-		<table_extra input_form="" output_form="" visible="false">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="440" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra input_form="" output_form="" visible="false"/>
 	</table>
 	<table name="Contacts" uuid="A834B9ACBDD24E40807F42B136088858" id="4" leave_tag_on_delete="true">
 		<field name="Contact_ID" uuid="D4DD5576BD3D4985B1D2AB891FBF3B63" type="4" unique="true" never_null="true" id="1">
@@ -71,12 +56,7 @@
 		<field name="Web Site" uuid="E34B79AC3AFA4A9B83FEF1D33297C086" type="10" never_null="true" id="13"/>
 		<field name="Notes" uuid="84A652CA9429451796C81851363035FF" type="10" never_null="true" id="14"/>
 		<primary_key field_name="Contact_ID" field_uuid="D4DD5576BD3D4985B1D2AB891FBF3B63"/>
-		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="640" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output"/>
 	</table>
 	<table name="Products" uuid="4AE3645994C948B4B833A3F61A57E750" id="5" leave_tag_on_delete="true">
 		<field name="Product_ID" uuid="9A1C46EEC0464465890468FC6031C9A9" type="4" unique="true" never_null="true" id="1">
@@ -89,12 +69,7 @@
 		<field name="Description" uuid="4080F8B73FB049299B722DB6E8554294" type="10" never_null="true" id="4"/>
 		<field name="ListPrice" uuid="0809A601A1C74A6CB3906EC5A9339D58" type="6" never_null="true" id="5"/>
 		<primary_key field_name="Product_ID" field_uuid="9A1C46EEC0464465890468FC6031C9A9"/>
-		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="840" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output"/>
 	</table>
 	<table name="Invoices" uuid="9062C335BBF94C84B5511BA12876C798" id="6" leave_tag_on_delete="true">
 		<field name="Invoice_ID" uuid="10684D0A97274C78A43D81D196D3695D" type="4" unique="true" never_null="true" id="1">
@@ -109,12 +84,7 @@
 		<field name="Total" uuid="743700EEA4034B18879EBCD3682FC552" type="6" never_null="true" id="8"/>
 		<field name="Terms" uuid="0E00ED5EF01F4AF98663A97E96344B1A" type="10" never_null="true" id="9"/>
 		<primary_key field_name="Invoice_ID" field_uuid="10684D0A97274C78A43D81D196D3695D"/>
-		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1040" top="40" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="Output"/>
 	</table>
 	<table name="LineItems" uuid="B2618D4787304458AACBE37870F6C737" id="7" leave_tag_on_delete="true">
 		<field name="LineItem_ID" uuid="15760D46B05A41C88EB1581013F789EB" type="4" unique="true" never_null="true" id="1">
@@ -128,12 +98,7 @@
 		<field name="Extended" uuid="210C22636DB44F40B902F6BE96B83CBD" type="6" never_null="true" id="7"/>
 		<field name="ProductNumber" uuid="A4F66D9D1C5C4257B0316D7849487A01" type="10" limiting_length="10" never_null="true" id="8"/>
 		<primary_key field_name="LineItem_ID" field_uuid="15760D46B05A41C88EB1581013F789EB"/>
-		<table_extra trigger_insert="true" trigger_update="true" input_form="Included" output_form="out">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="40" top="287" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra trigger_insert="true" trigger_update="true" input_form="Included" output_form="out"/>
 	</table>
 	<table name="CompanyInfo" uuid="9EB35734C989417E97B4E5E0FC0C51D3" id="8" leave_tag_on_delete="true">
 		<field name="Company_ID" uuid="F218A3F5E86A40D4A4BB1AE177594204" type="4" unique="true" never_null="true" id="1">
@@ -147,12 +112,7 @@
 		<field name="WebSite" uuid="24BCF334CE0547C198AD964A3511FD68" type="10" never_null="true" id="7"/>
 		<field name="DefaultTerms" uuid="691B4E222E46401FAE677776B1A0FEB5" type="10" never_null="true" id="8"/>
 		<primary_key field_name="Company_ID" field_uuid="F218A3F5E86A40D4A4BB1AE177594204"/>
-		<table_extra visible="false" trigger_insert="true" trigger_update="true" input_form="Input" output_form="Input">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="240" top="287" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra visible="false" trigger_insert="true" trigger_update="true" input_form="Input" output_form="Input"/>
 	</table>
 	<table name="Fnd_Pref" uuid="CB6092B78CBD40AD96995A37A578CDB6" id="9" leave_tag_on_delete="true">
 		<field name="ID" uuid="4040B399C2AA43A7AB10612E88F1C4CE" type="4" unique="true" autosequence="true" never_null="true" id="1"/>
@@ -161,14 +121,9 @@
 		<field name="Type" uuid="28D7477462604BCCBA3CCCABA47C7AED" type="3" never_null="true" id="4"/>
 		<field name="Value" uuid="34F60F17E8CF4171A5AEFDBAE1ED7037" type="10" never_null="true" id="5"/>
 		<primary_key field_name="ID" field_uuid="4040B399C2AA43A7AB10612E88F1C4CE"/>
-		<table_extra input_form="" output_form="" visible="false">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="440" top="287" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
+		<table_extra input_form="" output_form="" visible="false"/>
 	</table>
-	<relation uuid="A84AA40259A24154A4E8F99FB4787D52" name_Nto1="contact" name_1toN="invoice" auto_load_Nto1="true" auto_load_1toN="true" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="A84AA40259A24154A4E8F99FB4787D52" name_Nto1="contact" name_1toN="invoice" auto_load_Nto1="true" auto_load_1toN="true" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="83560B1C24004DEB9DEE692688CB7E7A" name="Contact_ID">
 				<table_ref uuid="9062C335BBF94C84B5511BA12876C798" name="Invoices"/>
@@ -183,7 +138,7 @@
 			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="false"/>
 		</relation_extra>
 	</relation>
-	<relation uuid="C8E54D59FF4A46008A82C653109FB41F" name_Nto1="invoice" name_1toN="lineItem" auto_load_Nto1="false" auto_load_1toN="true" foreign_key="false" state="1" integrity="delete">
+	<relation uuid="C8E54D59FF4A46008A82C653109FB41F" name_Nto1="invoice" name_1toN="lineItem" auto_load_1toN="true" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="94E2851E9232428B8CC0F4C928265BDD" name="Invoice_ID">
 				<table_ref uuid="B2618D4787304458AACBE37870F6C737" name="LineItems"/>
@@ -198,7 +153,7 @@
 			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="false"/>
 		</relation_extra>
 	</relation>
-	<relation uuid="5D166E5FF0B24413BADAD7C26EE89EF1" name_Nto1="product" name_1toN="lineItem" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+	<relation uuid="5D166E5FF0B24413BADAD7C26EE89EF1" name_Nto1="product" name_1toN="lineItem" auto_load_Nto1="true" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="F77B0601B983455083518E235130DF6B" name="Product_ID">
 				<table_ref uuid="B2618D4787304458AACBE37870F6C737" name="LineItems"/>

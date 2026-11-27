@@ -167,6 +167,10 @@ If (Records in table([Invoices])=0)
 	Fnd_SqNo_Set("Invoice Number"; 1001)  // Start invoices at this number. Don't localize this.
 End if 
 
+// The Contacts input form is shown with DIALOG, and so has a Form object; every other table stays on
+//   MODIFY RECORD. Fnd_IO_UseDialog(True) would turn it on for the whole database.
+Fnd_IO_UseDialog(->[Contacts]; True)
+
 If (Fnd_Pref_GetBoolean("Display Contacts at Startup"; True))
 	Fnd_IO_DisplayTable(->[Contacts])  // Display the Contacts table window.
 End if 

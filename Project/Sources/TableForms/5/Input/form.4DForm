@@ -2,7 +2,7 @@
 	"inheritedForm": "Fnd_IO_InputForm",
 	"windowMinWidth": 400,
 	"windowMinHeight": 220,
-	"rightMargin": 20,
+	"rightMargin": 35,
 	"bottomMargin": 60,
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -30,9 +30,9 @@
 					"type": "input",
 					"top": 21,
 					"left": 107,
-					"width": 94,
+					"width": 154,
 					"height": 16,
-					"dataSource": "[Products:5]Product Number:2",
+					"dataSource": "[Products:5]ProductNumber:2",
 					"class": "LargeField",
 					"textAlign": "left",
 					"fill": "#FFFFFF",
@@ -44,16 +44,17 @@
 					"entryFilter": "~\"A-Z;0-9; ;,;.;-\"",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Product List Price": {
 					"type": "input",
 					"top": 21,
-					"left": 305,
-					"width": 77,
+					"left": 365,
+					"width": 137,
 					"height": 16,
 					"sizingX": "move",
-					"dataSource": "[Products:5]List Price:5",
+					"dataSource": "[Products:5]ListPrice:5",
 					"dataSourceTypeHint": "number",
 					"class": "LargeField",
 					"fill": "#FFFFFF",
@@ -71,10 +72,10 @@
 					"type": "input",
 					"top": 51,
 					"left": 107,
-					"width": 275,
+					"width": 395,
 					"height": 16,
-					"sizingX": "grow",
-					"dataSource": "[Products:5]Product Name:3",
+					"sizingX": "move",
+					"dataSource": "[Products:5]ProductName:3",
 					"class": "LargeField",
 					"textAlign": "left",
 					"fill": "#FFFFFF",
@@ -92,8 +93,8 @@
 					"type": "input",
 					"top": 82,
 					"left": 107,
-					"width": 260,
-					"height": 80,
+					"width": 380,
+					"height": 161,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "[Products:5]Description:4",
@@ -109,7 +110,8 @@
 					"method": "ObjectMethods/Product Description.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"fontTheme": "normal"
 				},
 				"Products_NumberLabel_t": {
 					"type": "input",
@@ -124,7 +126,8 @@
 					"fill": "transparent",
 					"borderStyle": "none",
 					"enterable": false,
-					"contextMenu": "none"
+					"contextMenu": "none",
+					"sizingX": "move"
 				},
 				"Products_NameLabel_t": {
 					"type": "input",
@@ -139,7 +142,8 @@
 					"fill": "transparent",
 					"borderStyle": "none",
 					"enterable": false,
-					"contextMenu": "none"
+					"contextMenu": "none",
+					"sizingX": "move"
 				},
 				"Products_DescriptionLabel_t": {
 					"type": "input",
@@ -154,12 +158,13 @@
 					"fill": "transparent",
 					"borderStyle": "none",
 					"enterable": false,
-					"contextMenu": "none"
+					"contextMenu": "none",
+					"sizingX": "move"
 				},
 				"Products_PriceLabel_t": {
 					"type": "input",
 					"top": 21,
-					"left": 212,
+					"left": 272,
 					"width": 83,
 					"height": 16,
 					"sizingX": "move",
@@ -189,5 +194,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 66,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

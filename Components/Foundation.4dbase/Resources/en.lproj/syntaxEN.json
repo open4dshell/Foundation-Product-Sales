@@ -812,6 +812,32 @@
 			"Params": [],
 			"Summary": ""
 		},
+		"Fnd_IO_UseDialog": {
+			"Syntax": "**Fnd_IO_UseDialog**( *first_v* : Variant; *second_v* : Variant; *use_b* : Boolean )->useDialog_b : Boolean",
+			"Params": [
+				[
+					"first_v",
+					"Variant",
+					"->"
+				],
+				[
+					"second_v",
+					"Variant",
+					"->"
+				],
+				[
+					"use_b",
+					"Boolean",
+					"->"
+				],
+				[
+					"useDialog_b",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
 		"Request2": {
 			"Syntax": "**Request2**( *message_t* : Text; *inDefault_t* : Text; *inIcon_i* : Integer; *inBttn1_t* : Text; *inBttn2_t* : Text; *inTitle_t* : Text )->enteredText_t : Text",
 			"Params": [
@@ -2199,6 +2225,11 @@
 			],
 			"Summary": ""
 		},
+		"Fnd_Dev_ConvertOnValidate": {
+			"Syntax": "**Fnd_Dev_ConvertOnValidate**()",
+			"Params": [],
+			"Summary": ""
+		},
 		"Fnd_Dev_WriteDocumentation": {
 			"Syntax": "**Fnd_Dev_WriteDocumentation**( *options_o* : Object )",
 			"Params": [
@@ -2323,6 +2354,17 @@
 		"Fnd_Art_About": {
 			"Syntax": "**Fnd_Art_About**()",
 			"Params": [],
+			"Summary": ""
+		},
+		"Fnd_Dev_SanityCheck": {
+			"Syntax": "**Fnd_Dev_SanityCheck**()->result_o : Object",
+			"Params": [
+				[
+					"result_o",
+					"Object",
+					"<-"
+				]
+			],
 			"Summary": ""
 		},
 		"Fnd_Tlbr_Style": {
@@ -2612,11 +2654,11 @@
 			"Summary": ""
 		},
 		"Fnd_IO_DisplayRecord": {
-			"Syntax": "**Fnd_IO_DisplayRecord**( *inTable_ptr* : Pointer; *inRecordNumber_i* : Integer; *inShowlockedmessage_b* : Boolean )->displayResult_i : Integer",
+			"Syntax": "**Fnd_IO_DisplayRecord**( *first_v* : Variant; *inRecordNumber_i* : Integer; *inShowlockedmessage_b* : Boolean )->displayResult_i : Integer",
 			"Params": [
 				[
-					"inTable_ptr",
-					"Pointer",
+					"first_v",
+					"Variant",
 					"->"
 				],
 				[
@@ -8804,11 +8846,11 @@
 			"Summary": ""
 		},
 		"Fnd_IO_DisplayRecord2": {
-			"Syntax": "**Fnd_IO_DisplayRecord2**( *pointerTableDisplay_ptr* : Pointer; *recordNumber_i* : Integer; *inCallingProcess_i* : Integer; *inShowLockedMessage_b* : Boolean )",
+			"Syntax": "**Fnd_IO_DisplayRecord2**( *first_v* : Variant; *recordNumber_i* : Integer; *inCallingProcess_i* : Integer; *inShowLockedMessage_b* : Boolean )",
 			"Params": [
 				[
-					"pointerTableDisplay_ptr",
-					"Pointer",
+					"first_v",
+					"Variant",
 					"->"
 				],
 				[

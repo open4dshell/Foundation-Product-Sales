@@ -20,7 +20,9 @@ If (Current process name=$DesiredProcessName_t)
 	RELOAD PROJECT
 	DELAY PROCESS(Current process; 30)
 	
-	// Fnd_Bttn_DarkDemo  // parked out of the repo: f6/Parked/Fnd_Bttn_DarkDemo
+	Fnd_Shell_Installer()
+	
+	
 	
 Else 
 	// This version allows for any number of processes

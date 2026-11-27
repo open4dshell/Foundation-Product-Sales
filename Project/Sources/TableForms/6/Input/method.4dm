@@ -119,9 +119,6 @@ Case of
 		// It may have just been updated.
 		Invoices_UpdateContactInfo
 		
-	: (Form event code=On Validate)
-		VALIDATE TRANSACTION
-		
 	: (Form event code=On Unload)
 		If (Record number(Current form table->)=New record)
 			Fnd_SqNo_Put("Invoice Number"; [Invoices]InvoiceNumber)

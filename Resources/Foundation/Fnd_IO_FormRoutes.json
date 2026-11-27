@@ -1,0 +1,189 @@
+﻿{
+	"routes": {
+		"4/input": "dialog",
+		"4/output": "dialog",
+		"4/report": "dialog",
+		"5/input": "dialog",
+		"5/output": "dialog",
+		"5/report": "dialog",
+		"6/dummydetail": "dialog",
+		"6/included": "dialog",
+		"6/input": "dialog",
+		"6/invoice": "dialog",
+		"6/output": "dialog",
+		"6/report": "dialog",
+		"6/selectcontact": "dialog",
+		"7/included": "dialog",
+		"7/invoiceincluded": "dialog",
+		"7/out": "dialog",
+		"7/selectproduct": "dialog",
+		"8/input": "dialog",
+		"0/_matrix_testing": "dialog",
+		"0/fnd_io_inputform": "dialog",
+		"0/fnd_io_inputtemplate": "dialog",
+		"0/fnd_io_outputtemplate": "dialog",
+		"0/fnd_out": "dialog",
+		"0/fnd_tlbr_toolbar": "dialog",
+		"0/fps": "dialog",
+		"0/preferences": "dialog"
+	},
+	"forms": [
+		{
+			"table": 4,
+			"tableName": "Contacts",
+			"form": "Input",
+			"route": "dialog"
+		},
+		{
+			"table": 4,
+			"tableName": "Contacts",
+			"form": "Output",
+			"route": "dialog"
+		},
+		{
+			"table": 4,
+			"tableName": "Contacts",
+			"form": "Report",
+			"route": "dialog"
+		},
+		{
+			"table": 5,
+			"tableName": "Products",
+			"form": "Input",
+			"route": "dialog"
+		},
+		{
+			"table": 5,
+			"tableName": "Products",
+			"form": "Output",
+			"route": "dialog"
+		},
+		{
+			"table": 5,
+			"tableName": "Products",
+			"form": "Report",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "DummyDetail",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "Included",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "Input",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "Invoice",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "Output",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "Report",
+			"route": "dialog"
+		},
+		{
+			"table": 6,
+			"tableName": "Invoices",
+			"form": "SelectContact",
+			"route": "dialog"
+		},
+		{
+			"table": 7,
+			"tableName": "LineItems",
+			"form": "Included",
+			"route": "dialog"
+		},
+		{
+			"table": 7,
+			"tableName": "LineItems",
+			"form": "InvoiceIncluded",
+			"route": "dialog"
+		},
+		{
+			"table": 7,
+			"tableName": "LineItems",
+			"form": "out",
+			"route": "dialog"
+		},
+		{
+			"table": 7,
+			"tableName": "LineItems",
+			"form": "SelectProduct",
+			"route": "dialog"
+		},
+		{
+			"table": 8,
+			"tableName": "CompanyInfo",
+			"form": "Input",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "_Matrix_Testing",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Fnd_IO_InputForm",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Fnd_IO_InputTemplate",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Fnd_IO_OutputTemplate",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Fnd_Out",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Fnd_Tlbr_Toolbar",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "FPS",
+			"route": "dialog"
+		},
+		{
+			"table": 0,
+			"tableName": "",
+			"form": "Preferences",
+			"route": "dialog"
+		}
+	],
+	"methods": []
+}
